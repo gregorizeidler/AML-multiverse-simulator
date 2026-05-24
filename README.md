@@ -20,15 +20,15 @@
 
 ### System Architecture
 
-![AML Multiverse Simulator Architecture](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/architecture_overview.png)
+![AML Multiverse Simulator Architecture](docs/assets/architecture_overview.png)
 
 ### 7 Money-Laundering Typologies
 
-![7 Money Laundering Typologies Explained](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/typologies_explained.png)
+![7 Money Laundering Typologies Explained](docs/assets/typologies_explained.png)
 
 ### Feature Engineering Pipeline
 
-![Feature Engineering Pipeline — Zero Look-Ahead](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/feature_engineering.png)
+![Feature Engineering Pipeline — Zero Look-Ahead](docs/assets/feature_engineering.png)
 
 ### Enterprise Production Architecture (K8s · Kafka · Redis · PostgreSQL · MongoDB · Prometheus)
 
@@ -38,35 +38,35 @@
 
 ### ML Model Universe — XGBoost · IsolationForest · Optuna · SHAP
 
-![ML Model Universe Pipeline](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/ml_universe_pipeline.png)
+![ML Model Universe Pipeline](docs/assets/ml_universe_pipeline.png)
 
 ### Rule Engine — YAML → Alert Score → 7 Universe Comparison
 
-![Rule Engine and Universe Comparison](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/rule_engine_universes.png)
+![Rule Engine and Universe Comparison](docs/assets/rule_engine_universes.png)
 
 ### Entity Resolution + GNN Spectral Scoring
 
-![Entity Resolution and GNN Universe](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/entity_gnn_explainer.png)
+![Entity Resolution and GNN Universe](docs/assets/entity_gnn_explainer.png)
 
 ### Backtesting · Bayesian Optimization · Drift Detection
 
-![Advanced Analytics — Backtesting, Optimization, Drift](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/backtesting_optimization_drift.png)
+![Advanced Analytics — Backtesting, Optimization, Drift](docs/assets/backtesting_optimization_drift.png)
 
 ### SAR Reports · DBSCAN Clustering · Case Management
 
-![Intelligence Layer — SAR, Clustering, Cases](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/sar_clustering_cases.png)
+![Intelligence Layer — SAR, Clustering, Cases](docs/assets/sar_clustering_cases.png)
 
 ### Streaming Pipeline · WebSocket · RAG AI Chat
 
-![Real-Time Layer — Kafka Mock, WebSocket, RAG Chat](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/streaming_rag_chat.png)
+![Real-Time Layer — Kafka Mock, WebSocket, RAG Chat](docs/assets/streaming_rag_chat.png)
 
 ### React SPA — 17 Pages
 
-![React Frontend Dashboard — 17 Pages](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/frontend_dashboard.png)
+![React Frontend Dashboard — 17 Pages](docs/assets/frontend_dashboard.png)
 
 ### Pareto Frontier · Sensitivity Analysis · Mutation Engine
 
-![Policy Optimization — Pareto Frontier and Mutation Engine](/Users/gregorizeidler/.cursor/projects/Users-gregorizeidler-aml-test-case/assets/pareto_mutation_optimizer.png)
+![Policy Optimization — Pareto Frontier and Mutation Engine](docs/assets/pareto_mutation_optimizer.png)
 
 ---
 
