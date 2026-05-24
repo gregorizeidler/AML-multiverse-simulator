@@ -30,11 +30,7 @@
 
 ![Feature Engineering Pipeline — Zero Look-Ahead](docs/assets/feature_engineering.png)
 
-### Enterprise Production Architecture (K8s · Kafka · Redis · PostgreSQL · MongoDB · Prometheus)
-
-![AML Multiverse Simulator v3 — Enterprise Architecture](docs/assets/architecture_enterprise.png)
-
-> The current implementation uses FastAPI + file-based storage as a local-first version. The enterprise layer adds: real Kafka cluster (vs. in-memory mock), PostgreSQL persistence, Redis cache/streams, MongoDB for unstructured audit logs, S3/MinIO artifact store, JWT auth, Kubernetes orchestration, and full observability stack (Prometheus → Grafana, Jaeger distributed tracing, OpenTelemetry, Loki).
+> **Enterprise layer** adds: real Kafka cluster, PostgreSQL persistence, Redis cache/streams, MongoDB for audit logs, S3/MinIO artifact store, JWT auth, Kubernetes orchestration, and full observability (Prometheus → Grafana, Jaeger, OpenTelemetry, Loki).
 
 ### ML Model Universe — XGBoost · IsolationForest · Optuna · SHAP
 
