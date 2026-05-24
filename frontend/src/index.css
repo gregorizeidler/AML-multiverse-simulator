@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-surface text-gray-100 font-sans;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-surface-border rounded-full;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface-card border border-surface-border rounded-xl p-6;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-brand-500/50;
+  }
+  .btn-primary {
+    @apply btn bg-brand-600 hover:bg-brand-700 text-white;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-surface-hover text-gray-400 hover:text-white;
+  }
+  .metric-card {
+    @apply card flex flex-col gap-1;
+  }
+  .metric-label {
+    @apply text-xs font-medium text-gray-500 uppercase tracking-wider;
+  }
+  .metric-value {
+    @apply text-2xl font-bold text-white;
+  }
+  .metric-sub {
+    @apply text-xs text-gray-500;
+  }
+}

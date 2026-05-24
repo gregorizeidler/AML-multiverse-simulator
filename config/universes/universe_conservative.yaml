@@ -1,0 +1,95 @@
+id: universe_conservative
+name: "Conservative AML Strategy"
+description: >
+  Low thresholds across all rules. Maximizes recall at the cost of high
+  false-positive rates. Suitable for extremely high-risk jurisdictions.
+
+rules:
+  - id: R001
+    name: large_single_transaction
+    description: Flag any single transaction above $5,000
+    field: amount
+    operator: ">"
+    threshold: 5000
+    weight: 1.0
+    alert_level: medium
+    typologies: [structuring, smurfing]
+
+  - id: R002
+    name: rapid_succession_transactions
+    description: More than 3 transactions in 1 hour from same account
+    field: tx_count_1h
+    operator: ">"
+    threshold: 3
+    weight: 2.0
+    alert_level: high
+    typologies: [smurfing, layering]
+
+  - id: R003
+    name: velocity_24h
+    description: Total amount moved in 24h exceeds $8,000
+    field: amount_24h
+    operator: ">"
+    threshold: 8000
+    weight: 1.5
+    alert_level: high
+    typologies: [structuring]
+
+  - id: R004
+    name: unusual_counterparty_count
+    description: Account transacts with more than 5 unique counterparties in 7 days
+    field: unique_counterparties_7d
+    operator: ">"
+    threshold: 5
+    weight: 1.2
+    alert_level: medium
+    typologies: [layering, smurfing]
+
+  - id: R005
+    name: round_amount_flag
+    description: Transaction amount ends in exactly 000 (round number indicator)
+    field: is_round_amount
+    operator: "=="
+    threshold: 1
+    weight: 0.8
+    alert_level: low
+    typologies: [structuring]
+
+  - id: R006
+    name: cross_border_transaction
+    description: Transaction to/from foreign account
+    field: is_cross_border
+    operator: "=="
+    threshold: 1
+    weight: 1.0
+    alert_level: medium
+    typologies: [round_tripping, layering]
+
+  - id: R007
+    name: dormant_account_activity
+    description: Account inactive for 30+ days suddenly active
+    field: days_since_last_tx
+    operator: ">"
+    threshold: 30
+    weight: 1.3
+    alert_level: medium
+    typologies: [layering]
+
+  - id: R008
+    name: graph_centrality_high
+    description: Account has high betweenness centrality in transaction graph
+    field: betweenness_centrality
+    operator: ">"
+    threshold: 0.05
+    weight: 2.5
+    alert_level: high
+    typologies: [layering, round_tripping]
+
+scoring:
+  method: weighted_sum
+  alert_threshold: 1.5
+  high_risk_threshold: 4.0
+
+cost_model:
+  investigation_cost_per_alert: 150
+  missed_laundering_cost_per_txn: 50000

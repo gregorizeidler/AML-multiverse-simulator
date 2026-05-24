@@ -1,0 +1,368 @@
+[
+  {
+    "reference_period": "W1",
+    "current_period": "W2",
+    "n_features_monitored": 10,
+    "n_features_drifted": 3,
+    "overall_drift_score": 0.0506,
+    "severity": "low",
+    "alert_rate_drift": 0.01,
+    "illicit_rate_drift": 0.0175,
+    "features": [
+      {
+        "feature": "amount_24h",
+        "ks_statistic": 0.071339,
+        "p_value": 0.034249,
+        "psi": 0.057346,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 5460.6677,
+        "current_mean": 4306.0816,
+        "mean_shift_pct": -21.14
+      },
+      {
+        "feature": "unique_counterparties_7d",
+        "ks_statistic": 0.070088,
+        "p_value": 0.039458,
+        "psi": 0.078738,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 7.368,
+        "current_mean": 6.4531,
+        "mean_shift_pct": -12.42
+      },
+      {
+        "feature": "amount",
+        "ks_statistic": 0.068836,
+        "p_value": 0.045344,
+        "psi": 0.023668,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 8416.8763,
+        "current_mean": 6155.8013,
+        "mean_shift_pct": -26.86
+      },
+      {
+        "feature": "betweenness_centrality",
+        "ks_statistic": 0.066333,
+        "p_value": 0.059433,
+        "psi": 0.023771,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.2327,
+        "current_mean": 0.211,
+        "mean_shift_pct": -9.31
+      },
+      {
+        "feature": "fan_out_ratio",
+        "ks_statistic": 0.066333,
+        "p_value": 0.059433,
+        "psi": 0.018155,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 106.3663,
+        "current_mean": 97.466,
+        "mean_shift_pct": -8.37
+      },
+      {
+        "feature": "amount_zscore",
+        "ks_statistic": 0.050063,
+        "p_value": 0.269448,
+        "psi": 0.031736,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.0149,
+        "current_mean": 0.0043,
+        "mean_shift_pct": -71.1
+      },
+      {
+        "feature": "tx_count_24h",
+        "ks_statistic": 0.050063,
+        "p_value": 0.269448,
+        "psi": 0.015054,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 1.7234,
+        "current_mean": 1.4869,
+        "mean_shift_pct": -13.73
+      },
+      {
+        "feature": "behavioral_anomaly_score",
+        "ks_statistic": 0.038798,
+        "p_value": 0.584793,
+        "psi": 0.018744,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4135,
+        "current_mean": 0.4111,
+        "mean_shift_pct": -0.58
+      },
+      {
+        "feature": "tx_count_1h",
+        "ks_statistic": 0.012516,
+        "p_value": 1.0,
+        "psi": 0.001311,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.1302,
+        "current_mean": 0.1364,
+        "mean_shift_pct": 4.81
+      },
+      {
+        "feature": "pass_through_ratio",
+        "ks_statistic": 0.011264,
+        "p_value": 1.0,
+        "psi": 0.0,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4551,
+        "current_mean": 0.4596,
+        "mean_shift_pct": 0.98
+      }
+    ]
+  },
+  {
+    "reference_period": "W2",
+    "current_period": "W3",
+    "n_features_monitored": 10,
+    "n_features_drifted": 3,
+    "overall_drift_score": 0.0578,
+    "severity": "low",
+    "alert_rate_drift": 0.005,
+    "illicit_rate_drift": 0.0,
+    "features": [
+      {
+        "feature": "unique_counterparties_7d",
+        "ks_statistic": 0.100125,
+        "p_value": 0.000659,
+        "psi": 0.078493,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 6.4531,
+        "current_mean": 7.6033,
+        "mean_shift_pct": 17.82
+      },
+      {
+        "feature": "tx_count_24h",
+        "ks_statistic": 0.072591,
+        "p_value": 0.029653,
+        "psi": 0.029384,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 1.4869,
+        "current_mean": 1.831,
+        "mean_shift_pct": 23.15
+      },
+      {
+        "feature": "amount_24h",
+        "ks_statistic": 0.071339,
+        "p_value": 0.034249,
+        "psi": 0.014468,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 4306.0816,
+        "current_mean": 5584.66,
+        "mean_shift_pct": 29.69
+      },
+      {
+        "feature": "betweenness_centrality",
+        "ks_statistic": 0.061327,
+        "p_value": 0.099065,
+        "psi": 0.019237,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.211,
+        "current_mean": 0.2342,
+        "mean_shift_pct": 10.98
+      },
+      {
+        "feature": "fan_out_ratio",
+        "ks_statistic": 0.061327,
+        "p_value": 0.099065,
+        "psi": 0.020016,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 97.466,
+        "current_mean": 106.3329,
+        "mean_shift_pct": 9.1
+      },
+      {
+        "feature": "amount",
+        "ks_statistic": 0.058824,
+        "p_value": 0.125975,
+        "psi": 0.022265,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 6155.8013,
+        "current_mean": 9205.6077,
+        "mean_shift_pct": 49.54
+      },
+      {
+        "feature": "amount_zscore",
+        "ks_statistic": 0.052566,
+        "p_value": 0.219685,
+        "psi": 0.059331,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.0043,
+        "current_mean": -0.024,
+        "mean_shift_pct": -656.23
+      },
+      {
+        "feature": "behavioral_anomaly_score",
+        "ks_statistic": 0.037547,
+        "p_value": 0.626693,
+        "psi": 0.011173,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4111,
+        "current_mean": 0.4135,
+        "mean_shift_pct": 0.58
+      },
+      {
+        "feature": "pass_through_ratio",
+        "ks_statistic": 0.036295,
+        "p_value": 0.668879,
+        "psi": 0.0,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4596,
+        "current_mean": 0.4384,
+        "mean_shift_pct": -4.61
+      },
+      {
+        "feature": "tx_count_1h",
+        "ks_statistic": 0.026283,
+        "p_value": 0.94562,
+        "psi": 0.006905,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.1364,
+        "current_mean": 0.1564,
+        "mean_shift_pct": 14.68
+      }
+    ]
+  },
+  {
+    "reference_period": "W3",
+    "current_period": "W4",
+    "n_features_monitored": 10,
+    "n_features_drifted": 1,
+    "overall_drift_score": 0.0426,
+    "severity": "none",
+    "alert_rate_drift": -0.0038,
+    "illicit_rate_drift": -0.0025,
+    "features": [
+      {
+        "feature": "unique_counterparties_7d",
+        "ks_statistic": 0.071339,
+        "p_value": 0.034249,
+        "psi": 0.05354,
+        "is_drifted": true,
+        "severity": "low",
+        "reference_mean": 7.6033,
+        "current_mean": 7.0576,
+        "mean_shift_pct": -7.18
+      },
+      {
+        "feature": "amount",
+        "ks_statistic": 0.05632,
+        "p_value": 0.158577,
+        "psi": 0.053473,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 9205.6077,
+        "current_mean": 15194.8762,
+        "mean_shift_pct": 65.06
+      },
+      {
+        "feature": "tx_count_24h",
+        "ks_statistic": 0.055069,
+        "p_value": 0.177235,
+        "psi": 0.019761,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 1.831,
+        "current_mean": 1.5732,
+        "mean_shift_pct": -14.08
+      },
+      {
+        "feature": "pass_through_ratio",
+        "ks_statistic": 0.050063,
+        "p_value": 0.269448,
+        "psi": 0.0,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4384,
+        "current_mean": 0.4709,
+        "mean_shift_pct": 7.41
+      },
+      {
+        "feature": "amount_zscore",
+        "ks_statistic": 0.048811,
+        "p_value": 0.297204,
+        "psi": 0.053051,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": -0.024,
+        "current_mean": 0.0037,
+        "mean_shift_pct": 115.49
+      },
+      {
+        "feature": "amount_24h",
+        "ks_statistic": 0.041302,
+        "p_value": 0.503502,
+        "psi": 0.01072,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 5584.66,
+        "current_mean": 5405.5924,
+        "mean_shift_pct": -3.21
+      },
+      {
+        "feature": "tx_count_1h",
+        "ks_statistic": 0.031289,
+        "p_value": 0.829314,
+        "psi": 0.009999,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.1564,
+        "current_mean": 0.1101,
+        "mean_shift_pct": -29.6
+      },
+      {
+        "feature": "fan_out_ratio",
+        "ks_statistic": 0.027534,
+        "p_value": 0.922727,
+        "psi": 0.00484,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 106.3329,
+        "current_mean": 102.2151,
+        "mean_shift_pct": -3.87
+      },
+      {
+        "feature": "betweenness_centrality",
+        "ks_statistic": 0.025031,
+        "p_value": 0.963923,
+        "psi": 0.00472,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.2342,
+        "current_mean": 0.2227,
+        "mean_shift_pct": -4.88
+      },
+      {
+        "feature": "behavioral_anomaly_score",
+        "ks_statistic": 0.018773,
+        "p_value": 0.998971,
+        "psi": 0.013395,
+        "is_drifted": false,
+        "severity": "none",
+        "reference_mean": 0.4135,
+        "current_mean": 0.4162,
+        "mean_shift_pct": 0.67
+      }
+    ]
+  }
+]

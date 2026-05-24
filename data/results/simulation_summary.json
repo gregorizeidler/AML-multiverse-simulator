@@ -1,0 +1,303 @@
+{
+  "dataset": {
+    "n_customers": 300,
+    "n_accounts": 409,
+    "n_transactions": 3197,
+    "illicit_transactions": 197,
+    "illicit_ratio": 0.0616,
+    "date_range": {
+      "start": "2023-01-01 00:00:00",
+      "end": "2024-01-14 00:00:00"
+    }
+  },
+  "universes": [
+    {
+      "universe_id": "universe_ml_model",
+      "name": "ML Model Universe",
+      "rank": 1,
+      "metrics": {
+        "true_positives": 196,
+        "false_positives": 38,
+        "true_negatives": 2962,
+        "false_negatives": 1,
+        "precision": 0.8376,
+        "recall": 0.9949,
+        "f1": 0.9095,
+        "false_positive_rate": 0.0127,
+        "auc_roc": 0.996,
+        "auc_pr": 0.9952,
+        "n_alerts": 234,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 35100.0,
+        "missed_laundering_cost": 50000.0,
+        "total_cost": 85100.0,
+        "ranking_score": 0.613,
+        "on_pareto_front": true,
+        "rank_sensitivity": {
+          "min_rank": 1,
+          "max_rank": 1,
+          "rank_variance": 0.0,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 234,
+      "n_rules": 5,
+      "alert_threshold": 4.0,
+      "high_risk_threshold": 7.0
+    },
+    {
+      "universe_id": "universe_gnn",
+      "name": "GNN Graph Universe",
+      "rank": 2,
+      "metrics": {
+        "true_positives": 197,
+        "false_positives": 720,
+        "true_negatives": 2280,
+        "false_negatives": 0,
+        "precision": 0.2148,
+        "recall": 1.0,
+        "f1": 0.3537,
+        "false_positive_rate": 0.24,
+        "auc_roc": 0.992,
+        "auc_pr": 0.8004,
+        "n_alerts": 917,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 137550.0,
+        "missed_laundering_cost": 0.0,
+        "total_cost": 137550.0,
+        "ranking_score": 0.3737,
+        "on_pareto_front": true,
+        "rank_sensitivity": {
+          "min_rank": 2,
+          "max_rank": 2,
+          "rank_variance": 0.0,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 917,
+      "n_rules": 6,
+      "alert_threshold": 4.5,
+      "high_risk_threshold": 8.0
+    },
+    {
+      "universe_id": "universe_graph_enhanced",
+      "name": "Graph-Enhanced AML Strategy",
+      "rank": 3,
+      "metrics": {
+        "true_positives": 197,
+        "false_positives": 2487,
+        "true_negatives": 513,
+        "false_negatives": 0,
+        "precision": 0.0734,
+        "recall": 1.0,
+        "f1": 0.1368,
+        "false_positive_rate": 0.829,
+        "auc_roc": 0.9456,
+        "auc_pr": 0.7057,
+        "n_alerts": 2684,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 402600.0,
+        "missed_laundering_cost": 0.0,
+        "total_cost": 402600.0,
+        "ranking_score": 0.176,
+        "on_pareto_front": false,
+        "rank_sensitivity": {
+          "min_rank": 3,
+          "max_rank": 4,
+          "rank_variance": 0.19,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 2684,
+      "n_rules": 9,
+      "alert_threshold": 3.0,
+      "high_risk_threshold": 6.0
+    },
+    {
+      "universe_id": "universe_conservative",
+      "name": "Conservative AML Strategy",
+      "rank": 4,
+      "metrics": {
+        "true_positives": 179,
+        "false_positives": 2057,
+        "true_negatives": 943,
+        "false_negatives": 18,
+        "precision": 0.0801,
+        "recall": 0.9086,
+        "f1": 0.1471,
+        "false_positive_rate": 0.6857,
+        "auc_roc": 0.3727,
+        "auc_pr": 0.0583,
+        "n_alerts": 2236,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 335400.0,
+        "missed_laundering_cost": 900000.0,
+        "total_cost": 1235400.0,
+        "ranking_score": 0.1681,
+        "on_pareto_front": false,
+        "rank_sensitivity": {
+          "min_rank": 3,
+          "max_rank": 4,
+          "rank_variance": 0.19,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 2236,
+      "n_rules": 8,
+      "alert_threshold": 1.5,
+      "high_risk_threshold": 4.0
+    },
+    {
+      "universe_id": "universe_aggressive",
+      "name": "Aggressive AML Strategy",
+      "rank": 5,
+      "metrics": {
+        "true_positives": 0,
+        "false_positives": 57,
+        "true_negatives": 2943,
+        "false_negatives": 197,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "false_positive_rate": 0.019,
+        "auc_roc": 0.506,
+        "auc_pr": 0.0717,
+        "n_alerts": 57,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 8550.0,
+        "missed_laundering_cost": 9850000.0,
+        "total_cost": 9858550.0,
+        "ranking_score": -0.1538,
+        "on_pareto_front": false,
+        "rank_sensitivity": {
+          "min_rank": 5,
+          "max_rank": 6,
+          "rank_variance": 0.19,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 57,
+      "n_rules": 7,
+      "alert_threshold": 4.0,
+      "high_risk_threshold": 7.0
+    },
+    {
+      "universe_id": "universe_ml_enhanced",
+      "name": "ML-Enhanced AML Strategy",
+      "rank": 6,
+      "metrics": {
+        "true_positives": 31,
+        "false_positives": 1427,
+        "true_negatives": 1573,
+        "false_negatives": 166,
+        "precision": 0.0213,
+        "recall": 0.1574,
+        "f1": 0.0375,
+        "false_positive_rate": 0.4757,
+        "auc_roc": 0.3469,
+        "auc_pr": 0.0838,
+        "n_alerts": 1458,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 218700.0,
+        "missed_laundering_cost": 8300000.0,
+        "total_cost": 8518700.0,
+        "ranking_score": -0.1644,
+        "on_pareto_front": false,
+        "rank_sensitivity": {
+          "min_rank": 5,
+          "max_rank": 6,
+          "rank_variance": 0.19,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 1458,
+      "n_rules": 10,
+      "alert_threshold": 2.5,
+      "high_risk_threshold": 5.5
+    },
+    {
+      "universe_id": "universe_balanced",
+      "name": "Balanced AML Strategy",
+      "rank": 7,
+      "metrics": {
+        "true_positives": 13,
+        "false_positives": 1290,
+        "true_negatives": 1710,
+        "false_negatives": 184,
+        "precision": 0.01,
+        "recall": 0.066,
+        "f1": 0.0173,
+        "false_positive_rate": 0.43,
+        "auc_roc": 0.3501,
+        "auc_pr": 0.0543,
+        "n_alerts": 1303,
+        "n_illicit": 197,
+        "n_transactions": 3197,
+        "investigation_cost": 195450.0,
+        "missed_laundering_cost": 9200000.0,
+        "total_cost": 9395450.0,
+        "ranking_score": -0.2031,
+        "on_pareto_front": false,
+        "rank_sensitivity": {
+          "min_rank": 7,
+          "max_rank": 7,
+          "rank_variance": 0.0,
+          "rank_stable": true
+        }
+      },
+      "graph_summary": {
+        "n_nodes": 373,
+        "n_edges": 1288,
+        "density": 0.009282,
+        "n_weakly_connected_components": 1
+      },
+      "n_alerts": 1303,
+      "n_rules": 9,
+      "alert_threshold": 2.5,
+      "high_risk_threshold": 5.0
+    }
+  ],
+  "best_universe_id": "universe_ml_model"
+}

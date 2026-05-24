@@ -1,0 +1,563 @@
+{
+  "false_negatives": [],
+  "false_positives": [
+    {
+      "tx_id": "T00002658",
+      "amount": 13.68,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001450",
+      "amount": 37.74,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002319",
+      "amount": 1103.68,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001882",
+      "amount": 3860.04,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001632",
+      "amount": 422.59,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002537",
+      "amount": 1347.19,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002536",
+      "amount": 2098.46,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001512",
+      "amount": 2190.9,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002376",
+      "amount": 1233.94,
+      "alert_score": 14.0,
+      "rules_fired": [
+        "R_GNN",
+        "R_CYCLE",
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS"
+      ],
+      "reason": "5 rule(s) fired (R_GNN, R_CYCLE, R_PASS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001184",
+      "amount": 40.43,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001043",
+      "amount": 383.81,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001527",
+      "amount": 478.32,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002427",
+      "amount": 447.08,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002363",
+      "amount": 1961.17,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002367",
+      "amount": 465.84,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001728",
+      "amount": 12866.78,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002352",
+      "amount": 1382.74,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000922",
+      "amount": 531.96,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000832",
+      "amount": 423.79,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002756",
+      "amount": 228.02,
+      "alert_score": 8.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "4 rule(s) fired (R_PASS, R_ENT_RISK, R_CROSS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002024",
+      "amount": 18689.94,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000671",
+      "amount": 249.07,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001142",
+      "amount": 25.7,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001657",
+      "amount": 84.92,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001340",
+      "amount": 6.8,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000533",
+      "amount": 70.05,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002064",
+      "amount": 167.42,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000467",
+      "amount": 902.95,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002165",
+      "amount": 927.17,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000484",
+      "amount": 5521.56,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001037",
+      "amount": 1094.74,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000843",
+      "amount": 212.41,
+      "alert_score": 8.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "4 rule(s) fired (R_PASS, R_ENT_RISK, R_CROSS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002432",
+      "amount": 139.75,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001759",
+      "amount": 66.07,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000756",
+      "amount": 1070.78,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001124",
+      "amount": 184.32,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002789",
+      "amount": 646.57,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002089",
+      "amount": 134.81,
+      "alert_score": 6.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_CROSS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002521",
+      "amount": 309.84,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002818",
+      "amount": 3906.57,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000342",
+      "amount": 1391.87,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001600",
+      "amount": 64.77,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002982",
+      "amount": 1330.17,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002029",
+      "amount": 173.75,
+      "alert_score": 8.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "4 rule(s) fired (R_PASS, R_ENT_RISK, R_CROSS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001950",
+      "amount": 486.85,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002609",
+      "amount": 45163.43,
+      "alert_score": 8.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "4 rule(s) fired (R_PASS, R_ENT_RISK, R_CROSS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001719",
+      "amount": 4480.13,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001615",
+      "amount": 685.64,
+      "alert_score": 6.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_BC"
+      ],
+      "reason": "3 rule(s) fired (R_PASS, R_ENT_RISK, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001516",
+      "amount": 491.17,
+      "alert_score": 8.0,
+      "rules_fired": [
+        "R_PASS",
+        "R_ENT_RISK",
+        "R_CROSS",
+        "R_BC"
+      ],
+      "reason": "4 rule(s) fired (R_PASS, R_ENT_RISK, R_CROSS) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002140",
+      "amount": 308.22,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R_PASS",
+        "R_BC"
+      ],
+      "reason": "2 rule(s) fired (R_PASS, R_BC) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    }
+  ],
+  "fn_by_typology": {},
+  "fn_summary": {
+    "total_missed": 0,
+    "total_illicit": 197,
+    "miss_rate": 0.0,
+    "avg_amount_missed": 0,
+    "avg_score_gap": 0
+  },
+  "fp_summary": {
+    "total_false_alerts": 720,
+    "total_legitimate": 3000,
+    "fp_rate": 0.24,
+    "avg_amount_fp": 3230.48
+  }
+}

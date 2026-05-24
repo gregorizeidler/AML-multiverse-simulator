@@ -1,0 +1,6392 @@
+[
+  {
+    "sar_id": "SAR-20260524-522FE3BE",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2023-08-30"
+    },
+    "typologies": {
+      "primary": "shell_company",
+      "all_detected": [
+        "shell_company"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 1223030.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 971411.67,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 302351.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 382125.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 590622.66,
+        "countries": []
+      },
+      {
+        "account_id": "A0000232",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 1139941.05,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 506651.27,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 5116133.96,
+      "n_transactions": 10,
+      "avg_alert_score": 10.8,
+      "max_alert_score": 10.8
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 10 transaction(s) totaling $5,116,133.96 USD involving 9 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 10.80. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 10
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SHELL_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 382125.37,
+        "timestamp": "2023-01-01 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_2_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 302351.29,
+        "timestamp": "2023-01-15 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_2_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 340682.33,
+        "timestamp": "2023-01-20 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_0_000",
+        "from_account": "A0000297",
+        "to_account": "A0000232",
+        "amount": 630729.34,
+        "timestamp": "2023-06-21 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_0_001",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 594876.59,
+        "timestamp": "2023-07-08 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_1_000",
+        "from_account": "A0000035",
+        "to_account": "A0000258",
+        "amount": 656949.71,
+        "timestamp": "2023-07-19 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_0_002",
+        "from_account": "A0000035",
+        "to_account": "A0000316",
+        "amount": 566080.94,
+        "timestamp": "2023-07-25 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_1_001",
+        "from_account": "A0000258",
+        "to_account": "A0000232",
+        "amount": 590622.66,
+        "timestamp": "2023-07-27 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_1_002",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 545064.46,
+        "timestamp": "2023-08-12 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_1_003",
+        "from_account": "A0000393",
+        "to_account": "A0000018",
+        "amount": 506651.27,
+        "timestamp": "2023-08-30 00:00:00",
+        "alert_score": 10.8
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-88A709E7",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-12",
+      "end": "2023-10-29"
+    },
+    "typologies": {
+      "primary": "structuring",
+      "all_detected": [
+        "structuring"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 15,
+        "total_amount": 76456.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 76425.81,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 11,
+        "total_amount": 76163.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 75262.08,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 608942.2,
+      "n_transactions": 64,
+      "avg_alert_score": 8.2031,
+      "max_alert_score": 10.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nA single account made repeated deposits or withdrawals systematically below the $10,000 CTR threshold over an extended period. The consistency and regularity of the sub-threshold amounts \u2014 combined with the absence of a legitimate business explanation \u2014 indicates deliberate structuring to avoid mandatory currency transaction reporting.\n\nThis report covers 64 transaction(s) totaling $608,942.20 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 8.20. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File SAR for structuring under 31 USC \u00a7 5324",
+      "Review 90-day lookback for similar patterns",
+      "Contact branch operations for in-person transaction records",
+      "Consider Suspicious Activity Report to IRS for tax evasion indicators"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 64
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "STRUCT_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9106.01,
+        "timestamp": "2023-02-12 21:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_001",
+        "from_account": "A0000306",
+        "to_account": "A0000321",
+        "amount": 9346.24,
+        "timestamp": "2023-02-14 16:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_002",
+        "from_account": "A0000306",
+        "to_account": "A0000230",
+        "amount": 9889.14,
+        "timestamp": "2023-02-15 18:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_003",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 9321.35,
+        "timestamp": "2023-02-17 16:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_004",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9245.27,
+        "timestamp": "2023-02-18 22:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "STRUCT_2_005",
+        "from_account": "A0000306",
+        "to_account": "A0000018",
+        "amount": 9550.95,
+        "timestamp": "2023-02-20 15:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_006",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9200.57,
+        "timestamp": "2023-02-22 01:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_2_007",
+        "from_account": "A0000306",
+        "to_account": "A0000019",
+        "amount": 9627.56,
+        "timestamp": "2023-02-23 06:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_4_000",
+        "from_account": "A0000317",
+        "to_account": "A0000395",
+        "amount": 9566.96,
+        "timestamp": "2023-03-02 20:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "STRUCT_4_001",
+        "from_account": "A0000317",
+        "to_account": "A0000019",
+        "amount": 9703.48,
+        "timestamp": "2023-03-04 13:00:00",
+        "alert_score": 7.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-FCE63C0F",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-25",
+      "end": "2023-11-01"
+    },
+    "typologies": {
+      "primary": "layering",
+      "all_detected": [
+        "layering"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000297",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 278298.76,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 76975.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 110320.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 279025.14,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 82595.94,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 76165.35,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 103883.16,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 42956.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 119313.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 1678085.41,
+      "n_transactions": 20,
+      "avg_alert_score": 10.175,
+      "max_alert_score": 10.8
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were observed moving through a sequential chain of accounts in rapid succession, with each transfer slightly reducing the amount \u2014 consistent with fee skimming during layering. This multi-hop structure is designed to obscure the original source of funds and create a complex audit trail. The pattern is indicative of the layering phase of money laundering.\n\nThis report covers 20 transaction(s) totaling $1,678,085.41 USD involving 10 account(s) (A0000297, A0000019, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 10.18. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Map the full transaction chain and identify the ultimate beneficial owner",
+      "Issue account holds on all intermediary accounts",
+      "Request correspondent bank records for cross-border legs",
+      "Submit SAR to FinCEN within 30 days of detection"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "LAYER_0_000",
+        "from_account": "A0000319",
+        "to_account": "A0000049",
+        "amount": 119313.33,
+        "timestamp": "2023-02-25 02:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_0_001",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 113890.48,
+        "timestamp": "2023-02-25 11:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_0_002",
+        "from_account": "A0000297",
+        "to_account": "A0000180",
+        "amount": 112187.02,
+        "timestamp": "2023-02-25 16:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_0_003",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 110320.29,
+        "timestamp": "2023-02-26 03:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_4_000",
+        "from_account": "A0000302",
+        "to_account": "A0000395",
+        "amount": 108971.75,
+        "timestamp": "2023-05-25 08:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_4_001",
+        "from_account": "A0000395",
+        "to_account": "A0000321",
+        "amount": 107826.72,
+        "timestamp": "2023-05-25 10:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_4_002",
+        "from_account": "A0000321",
+        "to_account": "A0000297",
+        "amount": 103883.16,
+        "timestamp": "2023-05-25 12:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "LAYER_4_003",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 96195.63,
+        "timestamp": "2023-05-25 22:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_1_000",
+        "from_account": "A0000316",
+        "to_account": "A0000226",
+        "amount": 48287.52,
+        "timestamp": "2023-06-28 09:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "LAYER_1_001",
+        "from_account": "A0000226",
+        "to_account": "A0000018",
+        "amount": 42956.41,
+        "timestamp": "2023-06-28 17:00:00",
+        "alert_score": 10.8
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-1B53619C",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-03-21",
+      "end": "2023-12-18"
+    },
+    "typologies": {
+      "primary": "tbml",
+      "all_detected": [
+        "tbml"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 541140.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 664943.22,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1007560.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 767780.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 445905.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 158024.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 623270.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 274094.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 426919.01,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 9861986.8,
+      "n_transactions": 20,
+      "avg_alert_score": 10.675,
+      "max_alert_score": 10.8
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 20 transaction(s) totaling $9,861,986.80 USD involving 10 account(s) (A0000035, A0000019, A0000317, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 10.68. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "TBML_2_000",
+        "from_account": "A0000316",
+        "to_account": "A0000395",
+        "amount": 426919.01,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_2_001",
+        "from_account": "A0000232",
+        "to_account": "A0000395",
+        "amount": 464880.34,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_2_003",
+        "from_account": "A0000019",
+        "to_account": "A0000395",
+        "amount": 470427.64,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_2_002",
+        "from_account": "A0000179",
+        "to_account": "A0000395",
+        "amount": 445905.04,
+        "timestamp": "2023-03-22 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_2_KB",
+        "from_account": "A0000395",
+        "to_account": "A0000230",
+        "amount": 81698.15,
+        "timestamp": "2023-03-28 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_3_001",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 274494.32,
+        "timestamp": "2023-03-30 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_3_000",
+        "from_account": "A0000230",
+        "to_account": "A0000019",
+        "amount": 274094.27,
+        "timestamp": "2023-03-31 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_3_KB",
+        "from_account": "A0000019",
+        "to_account": "A0000321",
+        "amount": 70713.24,
+        "timestamp": "2023-04-12 00:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "TBML_0_004",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 640547.52,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "TBML_0_000",
+        "from_account": "A0000226",
+        "to_account": "A0000393",
+        "amount": 623270.4,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 10.8
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-DF19888E",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-04",
+      "end": "2024-01-14"
+    },
+    "typologies": {
+      "primary": "round_tripping",
+      "all_detected": [
+        "round_tripping"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 148374.2,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 415144.48,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 171752.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 245898.19,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 120174.83,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 115028.06,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 264714.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 166009.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 437114.74,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 181435.87,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 3555480.51,
+      "n_transactions": 20,
+      "avg_alert_score": 10.8,
+      "max_alert_score": 10.8
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were traced leaving the originating account, transiting through one or more foreign jurisdictions classified as high-risk by FATF, and returning to the originating account or a closely associated account. This circular flow, commonly called round-tripping, is used to disguise illicit funds as legitimate foreign investment income.\n\nThis report covers 20 transaction(s) totaling $3,555,480.51 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 10.80. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence on all foreign counterparties",
+      "Request SWIFT MT103 records for cross-border transfers",
+      "Assess PEP (Politically Exposed Person) connections",
+      "Coordinate with OFAC for sanctions screening"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "ROUND_1_000",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 190617.7,
+        "timestamp": "2023-04-04 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 176734.13,
+        "timestamp": "2023-04-17 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 171752.53,
+        "timestamp": "2023-05-07 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_003",
+        "from_account": "A0000316",
+        "to_account": "A0000393",
+        "amount": 167488.11,
+        "timestamp": "2023-05-16 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_004",
+        "from_account": "A0000393",
+        "to_account": "A0000049",
+        "amount": 152134.65,
+        "timestamp": "2023-06-07 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_000",
+        "from_account": "A0000018",
+        "to_account": "A0000230",
+        "amount": 181435.87,
+        "timestamp": "2023-06-18 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_001",
+        "from_account": "A0000230",
+        "to_account": "A0000049",
+        "amount": 166009.4,
+        "timestamp": "2023-07-15 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_002",
+        "from_account": "A0000049",
+        "to_account": "A0000232",
+        "amount": 152731.4,
+        "timestamp": "2023-08-01 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_003",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 152983.9,
+        "timestamp": "2023-08-18 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_004",
+        "from_account": "A0000035",
+        "to_account": "A0000018",
+        "amount": 148374.2,
+        "timestamp": "2023-09-07 00:00:00",
+        "alert_score": 10.8
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-740A1288",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-29",
+      "end": "2023-12-06"
+    },
+    "typologies": {
+      "primary": "smurfing",
+      "all_detected": [
+        "smurfing"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9586.43,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 27973.57,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 14,
+        "total_amount": 19045.73,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28941.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 38116.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 18769.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9090.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9523.24,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 9,
+        "total_amount": 28736.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28027.96,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 456084.04,
+      "n_transactions": 48,
+      "avg_alert_score": 7.9167,
+      "max_alert_score": 10.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nMultiple transactions were observed originating from different accounts and converging on a single destination account within a compressed time window. Each individual transaction was structured to fall below the $10,000 Currency Transaction Reporting (CTR) threshold, a pattern consistent with smurfing. The coordinated nature and timing of these transactions suggest deliberate avoidance of regulatory reporting obligations.\n\nThis report covers 48 transaction(s) totaling $456,084.04 USD involving 10 account(s) (A0000035, A0000317, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 7.92. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File CTR for aggregate transactions exceeding $10,000 by the same beneficial owner",
+      "Freeze implicated accounts pending AML investigation",
+      "Request source-of-funds documentation from account holders",
+      "Escalate to law enforcement if structuring is confirmed"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 48
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SMURF_2_002",
+        "from_account": "A0000393",
+        "to_account": "A0000226",
+        "amount": 9988.47,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_2_000",
+        "from_account": "A0000297",
+        "to_account": "A0000226",
+        "amount": 9880.37,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "SMURF_2_005",
+        "from_account": "A0000018",
+        "to_account": "A0000226",
+        "amount": 9893.03,
+        "timestamp": "2023-04-29 00:06:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_2_003",
+        "from_account": "A0000258",
+        "to_account": "A0000226",
+        "amount": 9681.26,
+        "timestamp": "2023-04-29 00:08:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_2_004",
+        "from_account": "A0000302",
+        "to_account": "A0000226",
+        "amount": 9776.35,
+        "timestamp": "2023-04-29 00:09:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "SMURF_2_001",
+        "from_account": "A0000395",
+        "to_account": "A0000226",
+        "amount": 9863.81,
+        "timestamp": "2023-04-29 00:24:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "SMURF_5_000",
+        "from_account": "A0000019",
+        "to_account": "A0000180",
+        "amount": 9118.09,
+        "timestamp": "2023-05-11 00:08:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "SMURF_5_002",
+        "from_account": "A0000321",
+        "to_account": "A0000180",
+        "amount": 9149.89,
+        "timestamp": "2023-05-11 00:15:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_5_001",
+        "from_account": "A0000232",
+        "to_account": "A0000180",
+        "amount": 9295.62,
+        "timestamp": "2023-05-11 00:20:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "SMURF_5_003",
+        "from_account": "A0000302",
+        "to_account": "A0000180",
+        "amount": 9378.01,
+        "timestamp": "2023-05-11 00:22:00",
+        "alert_score": 7.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-56067376",
+    "universe_id": "universe_ml_model",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-05-24",
+      "end": "2023-09-07"
+    },
+    "typologies": {
+      "primary": "crypto_fiat",
+      "all_detected": [
+        "crypto_fiat"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 39778.01,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6757.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 30535.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 23640.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 173096.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9256.46,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 30388.64,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 7419.63,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 441856.42,
+      "n_transactions": 14,
+      "avg_alert_score": 8.4929,
+      "max_alert_score": 10.8
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 14 transaction(s) totaling $441,856.42 USD involving 10 account(s) (A0000035, A0000319, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_model' with an average alert score of 8.49. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_model",
+      "typology_cluster_size": 14
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "CF_0_AGG_000",
+        "from_account": "A0000302",
+        "to_account": "A0000018",
+        "amount": 9586.41,
+        "timestamp": "2023-05-24 00:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "CF_0_AGG_002",
+        "from_account": "A0000258",
+        "to_account": "A0000018",
+        "amount": 9256.46,
+        "timestamp": "2023-05-24 02:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "CF_0_AGG_001",
+        "from_account": "A0000019",
+        "to_account": "A0000018",
+        "amount": 6757.33,
+        "timestamp": "2023-05-25 00:00:00",
+        "alert_score": 7.5
+      },
+      {
+        "tx_id": "CF_0_OFFRAMP",
+        "from_account": "A0000018",
+        "to_account": "A0000180",
+        "amount": 23640.0,
+        "timestamp": "2023-06-03 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "CF_2_AGG_003",
+        "from_account": "A0000395",
+        "to_account": "A0000302",
+        "amount": 30388.64,
+        "timestamp": "2023-08-18 08:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "CF_2_AGG_004",
+        "from_account": "A0000035",
+        "to_account": "A0000302",
+        "amount": 39778.01,
+        "timestamp": "2023-08-18 18:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "CF_2_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000302",
+        "amount": 35642.09,
+        "timestamp": "2023-08-18 20:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "CF_2_AGG_001",
+        "from_account": "A0000226",
+        "to_account": "A0000302",
+        "amount": 34792.63,
+        "timestamp": "2023-08-18 22:00:00",
+        "alert_score": 8.3
+      },
+      {
+        "tx_id": "CF_2_AGG_000",
+        "from_account": "A0000393",
+        "to_account": "A0000302",
+        "amount": 33752.17,
+        "timestamp": "2023-08-19 18:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "CF_1_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000316",
+        "amount": 8802.37,
+        "timestamp": "2023-08-25 04:00:00",
+        "alert_score": 7.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-522FE3BE",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2023-08-30"
+    },
+    "typologies": {
+      "primary": "shell_company",
+      "all_detected": [
+        "shell_company"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 1223030.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 971411.67,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 302351.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 382125.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 590622.66,
+        "countries": []
+      },
+      {
+        "account_id": "A0000232",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 1139941.05,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 506651.27,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 5116133.96,
+      "n_transactions": 10,
+      "avg_alert_score": 13.6,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 10 transaction(s) totaling $5,116,133.96 USD involving 9 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 13.60. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 10
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SHELL_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 382125.37,
+        "timestamp": "2023-01-01 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_2_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 302351.29,
+        "timestamp": "2023-01-15 00:00:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "SHELL_2_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 340682.33,
+        "timestamp": "2023-01-20 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_0_000",
+        "from_account": "A0000297",
+        "to_account": "A0000232",
+        "amount": 630729.34,
+        "timestamp": "2023-06-21 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_0_001",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 594876.59,
+        "timestamp": "2023-07-08 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_1_000",
+        "from_account": "A0000035",
+        "to_account": "A0000258",
+        "amount": 656949.71,
+        "timestamp": "2023-07-19 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_0_002",
+        "from_account": "A0000035",
+        "to_account": "A0000316",
+        "amount": 566080.94,
+        "timestamp": "2023-07-25 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_1_001",
+        "from_account": "A0000258",
+        "to_account": "A0000232",
+        "amount": 590622.66,
+        "timestamp": "2023-07-27 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_1_002",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 545064.46,
+        "timestamp": "2023-08-12 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SHELL_1_003",
+        "from_account": "A0000393",
+        "to_account": "A0000018",
+        "amount": 506651.27,
+        "timestamp": "2023-08-30 00:00:00",
+        "alert_score": 11.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-88A709E7",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-12",
+      "end": "2023-10-29"
+    },
+    "typologies": {
+      "primary": "structuring",
+      "all_detected": [
+        "structuring"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 15,
+        "total_amount": 76456.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 76425.81,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 11,
+        "total_amount": 76163.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 75262.08,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 608942.2,
+      "n_transactions": 64,
+      "avg_alert_score": 13.3594,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nA single account made repeated deposits or withdrawals systematically below the $10,000 CTR threshold over an extended period. The consistency and regularity of the sub-threshold amounts \u2014 combined with the absence of a legitimate business explanation \u2014 indicates deliberate structuring to avoid mandatory currency transaction reporting.\n\nThis report covers 64 transaction(s) totaling $608,942.20 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 13.36. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File SAR for structuring under 31 USC \u00a7 5324",
+      "Review 90-day lookback for similar patterns",
+      "Contact branch operations for in-person transaction records",
+      "Consider Suspicious Activity Report to IRS for tax evasion indicators"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 64
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "STRUCT_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9106.01,
+        "timestamp": "2023-02-12 21:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_001",
+        "from_account": "A0000306",
+        "to_account": "A0000321",
+        "amount": 9346.24,
+        "timestamp": "2023-02-14 16:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_002",
+        "from_account": "A0000306",
+        "to_account": "A0000230",
+        "amount": 9889.14,
+        "timestamp": "2023-02-15 18:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_003",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 9321.35,
+        "timestamp": "2023-02-17 16:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_004",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9245.27,
+        "timestamp": "2023-02-18 22:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_005",
+        "from_account": "A0000306",
+        "to_account": "A0000018",
+        "amount": 9550.95,
+        "timestamp": "2023-02-20 15:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_006",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9200.57,
+        "timestamp": "2023-02-22 01:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_2_007",
+        "from_account": "A0000306",
+        "to_account": "A0000019",
+        "amount": 9627.56,
+        "timestamp": "2023-02-23 06:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_4_000",
+        "from_account": "A0000317",
+        "to_account": "A0000395",
+        "amount": 9566.96,
+        "timestamp": "2023-03-02 20:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "STRUCT_4_001",
+        "from_account": "A0000317",
+        "to_account": "A0000019",
+        "amount": 9703.48,
+        "timestamp": "2023-03-04 13:00:00",
+        "alert_score": 12.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-FCE63C0F",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-25",
+      "end": "2023-11-01"
+    },
+    "typologies": {
+      "primary": "layering",
+      "all_detected": [
+        "layering"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000297",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 278298.76,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 76975.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 110320.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 279025.14,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 82595.94,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 76165.35,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 103883.16,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 42956.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 119313.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 1678085.41,
+      "n_transactions": 20,
+      "avg_alert_score": 12.675,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were observed moving through a sequential chain of accounts in rapid succession, with each transfer slightly reducing the amount \u2014 consistent with fee skimming during layering. This multi-hop structure is designed to obscure the original source of funds and create a complex audit trail. The pattern is indicative of the layering phase of money laundering.\n\nThis report covers 20 transaction(s) totaling $1,678,085.41 USD involving 10 account(s) (A0000297, A0000019, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 12.68. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Map the full transaction chain and identify the ultimate beneficial owner",
+      "Issue account holds on all intermediary accounts",
+      "Request correspondent bank records for cross-border legs",
+      "Submit SAR to FinCEN within 30 days of detection"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "LAYER_0_000",
+        "from_account": "A0000319",
+        "to_account": "A0000049",
+        "amount": 119313.33,
+        "timestamp": "2023-02-25 02:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "LAYER_0_001",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 113890.48,
+        "timestamp": "2023-02-25 11:00:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "LAYER_0_002",
+        "from_account": "A0000297",
+        "to_account": "A0000180",
+        "amount": 112187.02,
+        "timestamp": "2023-02-25 16:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "LAYER_0_003",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 110320.29,
+        "timestamp": "2023-02-26 03:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "LAYER_4_000",
+        "from_account": "A0000302",
+        "to_account": "A0000395",
+        "amount": 108971.75,
+        "timestamp": "2023-05-25 08:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "LAYER_4_001",
+        "from_account": "A0000395",
+        "to_account": "A0000321",
+        "amount": 107826.72,
+        "timestamp": "2023-05-25 10:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "LAYER_4_002",
+        "from_account": "A0000321",
+        "to_account": "A0000297",
+        "amount": 103883.16,
+        "timestamp": "2023-05-25 12:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "LAYER_4_003",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 96195.63,
+        "timestamp": "2023-05-25 22:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "LAYER_1_000",
+        "from_account": "A0000316",
+        "to_account": "A0000226",
+        "amount": 48287.52,
+        "timestamp": "2023-06-28 09:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "LAYER_1_001",
+        "from_account": "A0000226",
+        "to_account": "A0000018",
+        "amount": 42956.41,
+        "timestamp": "2023-06-28 17:00:00",
+        "alert_score": 12.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-1B53619C",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-03-21",
+      "end": "2023-12-18"
+    },
+    "typologies": {
+      "primary": "tbml",
+      "all_detected": [
+        "tbml"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 541140.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 664943.22,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1007560.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 767780.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 445905.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 158024.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 623270.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 274094.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 426919.01,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 9861986.8,
+      "n_transactions": 20,
+      "avg_alert_score": 13.375,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 20 transaction(s) totaling $9,861,986.80 USD involving 10 account(s) (A0000035, A0000019, A0000317, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 13.38. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "TBML_2_000",
+        "from_account": "A0000316",
+        "to_account": "A0000395",
+        "amount": 426919.01,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_2_001",
+        "from_account": "A0000232",
+        "to_account": "A0000395",
+        "amount": 464880.34,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_2_003",
+        "from_account": "A0000019",
+        "to_account": "A0000395",
+        "amount": 470427.64,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_2_002",
+        "from_account": "A0000179",
+        "to_account": "A0000395",
+        "amount": 445905.04,
+        "timestamp": "2023-03-22 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_2_KB",
+        "from_account": "A0000395",
+        "to_account": "A0000230",
+        "amount": 81698.15,
+        "timestamp": "2023-03-28 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_3_001",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 274494.32,
+        "timestamp": "2023-03-30 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_3_000",
+        "from_account": "A0000230",
+        "to_account": "A0000019",
+        "amount": 274094.27,
+        "timestamp": "2023-03-31 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_3_KB",
+        "from_account": "A0000019",
+        "to_account": "A0000321",
+        "amount": 70713.24,
+        "timestamp": "2023-04-12 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_0_004",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 640547.52,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "TBML_0_000",
+        "from_account": "A0000226",
+        "to_account": "A0000393",
+        "amount": 623270.4,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 14.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-DF19888E",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-04",
+      "end": "2024-01-14"
+    },
+    "typologies": {
+      "primary": "round_tripping",
+      "all_detected": [
+        "round_tripping"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 148374.2,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 415144.48,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 171752.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 245898.19,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 120174.83,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 115028.06,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 264714.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 166009.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 437114.74,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 181435.87,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 3555480.51,
+      "n_transactions": 20,
+      "avg_alert_score": 12.775,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were traced leaving the originating account, transiting through one or more foreign jurisdictions classified as high-risk by FATF, and returning to the originating account or a closely associated account. This circular flow, commonly called round-tripping, is used to disguise illicit funds as legitimate foreign investment income.\n\nThis report covers 20 transaction(s) totaling $3,555,480.51 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 12.78. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence on all foreign counterparties",
+      "Request SWIFT MT103 records for cross-border transfers",
+      "Assess PEP (Politically Exposed Person) connections",
+      "Coordinate with OFAC for sanctions screening"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "ROUND_1_000",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 190617.7,
+        "timestamp": "2023-04-04 00:00:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "ROUND_1_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 176734.13,
+        "timestamp": "2023-04-17 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "ROUND_1_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 171752.53,
+        "timestamp": "2023-05-07 00:00:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "ROUND_1_003",
+        "from_account": "A0000316",
+        "to_account": "A0000393",
+        "amount": 167488.11,
+        "timestamp": "2023-05-16 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "ROUND_1_004",
+        "from_account": "A0000393",
+        "to_account": "A0000049",
+        "amount": 152134.65,
+        "timestamp": "2023-06-07 00:00:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "ROUND_3_000",
+        "from_account": "A0000018",
+        "to_account": "A0000230",
+        "amount": 181435.87,
+        "timestamp": "2023-06-18 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "ROUND_3_001",
+        "from_account": "A0000230",
+        "to_account": "A0000049",
+        "amount": 166009.4,
+        "timestamp": "2023-07-15 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "ROUND_3_002",
+        "from_account": "A0000049",
+        "to_account": "A0000232",
+        "amount": 152731.4,
+        "timestamp": "2023-08-01 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "ROUND_3_003",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 152983.9,
+        "timestamp": "2023-08-18 00:00:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "ROUND_3_004",
+        "from_account": "A0000035",
+        "to_account": "A0000018",
+        "amount": 148374.2,
+        "timestamp": "2023-09-07 00:00:00",
+        "alert_score": 14.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-740A1288",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-29",
+      "end": "2023-12-06"
+    },
+    "typologies": {
+      "primary": "smurfing",
+      "all_detected": [
+        "smurfing"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9586.43,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 27973.57,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 14,
+        "total_amount": 19045.73,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28941.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 38116.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 18769.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9090.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9523.24,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 9,
+        "total_amount": 28736.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28027.96,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 456084.04,
+      "n_transactions": 48,
+      "avg_alert_score": 13.0625,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nMultiple transactions were observed originating from different accounts and converging on a single destination account within a compressed time window. Each individual transaction was structured to fall below the $10,000 Currency Transaction Reporting (CTR) threshold, a pattern consistent with smurfing. The coordinated nature and timing of these transactions suggest deliberate avoidance of regulatory reporting obligations.\n\nThis report covers 48 transaction(s) totaling $456,084.04 USD involving 10 account(s) (A0000035, A0000317, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 13.06. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File CTR for aggregate transactions exceeding $10,000 by the same beneficial owner",
+      "Freeze implicated accounts pending AML investigation",
+      "Request source-of-funds documentation from account holders",
+      "Escalate to law enforcement if structuring is confirmed"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 48
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SMURF_2_002",
+        "from_account": "A0000393",
+        "to_account": "A0000226",
+        "amount": 9988.47,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SMURF_2_000",
+        "from_account": "A0000297",
+        "to_account": "A0000226",
+        "amount": 9880.37,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SMURF_2_005",
+        "from_account": "A0000018",
+        "to_account": "A0000226",
+        "amount": 9893.03,
+        "timestamp": "2023-04-29 00:06:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "SMURF_2_003",
+        "from_account": "A0000258",
+        "to_account": "A0000226",
+        "amount": 9681.26,
+        "timestamp": "2023-04-29 00:08:00",
+        "alert_score": 12.5
+      },
+      {
+        "tx_id": "SMURF_2_004",
+        "from_account": "A0000302",
+        "to_account": "A0000226",
+        "amount": 9776.35,
+        "timestamp": "2023-04-29 00:09:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SMURF_2_001",
+        "from_account": "A0000395",
+        "to_account": "A0000226",
+        "amount": 9863.81,
+        "timestamp": "2023-04-29 00:24:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SMURF_5_000",
+        "from_account": "A0000019",
+        "to_account": "A0000180",
+        "amount": 9118.09,
+        "timestamp": "2023-05-11 00:08:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SMURF_5_002",
+        "from_account": "A0000321",
+        "to_account": "A0000180",
+        "amount": 9149.89,
+        "timestamp": "2023-05-11 00:15:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SMURF_5_001",
+        "from_account": "A0000232",
+        "to_account": "A0000180",
+        "amount": 9295.62,
+        "timestamp": "2023-05-11 00:20:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "SMURF_5_003",
+        "from_account": "A0000302",
+        "to_account": "A0000180",
+        "amount": 9378.01,
+        "timestamp": "2023-05-11 00:22:00",
+        "alert_score": 14.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-D55A1AA3",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-05-24",
+      "end": "2023-09-07"
+    },
+    "typologies": {
+      "primary": "crypto_fiat",
+      "all_detected": [
+        "crypto_fiat"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 39778.01,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6757.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6301.34,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 5,
+        "total_amount": 30535.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 23640.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 173096.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9256.46,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 30388.64,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 448157.76,
+      "n_transactions": 15,
+      "avg_alert_score": 13.3333,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 15 transaction(s) totaling $448,157.76 USD involving 10 account(s) (A0000035, A0000319, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 13.33. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 15
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "CF_0_AGG_000",
+        "from_account": "A0000302",
+        "to_account": "A0000018",
+        "amount": 9586.41,
+        "timestamp": "2023-05-24 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_0_AGG_002",
+        "from_account": "A0000258",
+        "to_account": "A0000018",
+        "amount": 9256.46,
+        "timestamp": "2023-05-24 02:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_0_AGG_001",
+        "from_account": "A0000019",
+        "to_account": "A0000018",
+        "amount": 6757.33,
+        "timestamp": "2023-05-25 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_0_OFFRAMP",
+        "from_account": "A0000018",
+        "to_account": "A0000180",
+        "amount": 23640.0,
+        "timestamp": "2023-06-03 00:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_2_AGG_003",
+        "from_account": "A0000395",
+        "to_account": "A0000302",
+        "amount": 30388.64,
+        "timestamp": "2023-08-18 08:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_2_AGG_004",
+        "from_account": "A0000035",
+        "to_account": "A0000302",
+        "amount": 39778.01,
+        "timestamp": "2023-08-18 18:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_2_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000302",
+        "amount": 35642.09,
+        "timestamp": "2023-08-18 20:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_2_AGG_001",
+        "from_account": "A0000226",
+        "to_account": "A0000302",
+        "amount": 34792.63,
+        "timestamp": "2023-08-18 22:00:00",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "CF_2_AGG_000",
+        "from_account": "A0000393",
+        "to_account": "A0000302",
+        "amount": 33752.17,
+        "timestamp": "2023-08-19 18:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_1_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000316",
+        "amount": 8802.37,
+        "timestamp": "2023-08-25 04:00:00",
+        "alert_score": 14.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-250678B9",
+    "universe_id": "universe_gnn",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-06",
+      "end": "2024-01-01"
+    },
+    "typologies": {
+      "primary": "unknown",
+      "all_detected": [
+        "mixed"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 386.34,
+        "countries": []
+      },
+      {
+        "account_id": "A0000136",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000109",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000236",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000097",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000185",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000155",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000172",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 356.32,
+        "countries": []
+      },
+      {
+        "account_id": "A0000303",
+        "role": "beneficiary",
+        "transaction_count": 6,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 450220.79,
+      "n_transactions": 101,
+      "avg_alert_score": 10.1733,
+      "max_alert_score": 14.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 101 transaction(s) totaling $450,220.79 USD involving 10 account(s) (A0000035, A0000136, A0000109, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_gnn' with an average alert score of 10.17. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_gnn",
+      "typology_cluster_size": 101
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "T00002376",
+        "from_account": "A0000179",
+        "to_account": "A0000163",
+        "amount": 1233.94,
+        "timestamp": "2023-01-06 07:52:29",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "T00002756",
+        "from_account": "A0000394",
+        "to_account": "A0000303",
+        "amount": 228.02,
+        "timestamp": "2023-01-09 14:27:49",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00000843",
+        "from_account": "A0000394",
+        "to_account": "A0000237",
+        "amount": 212.41,
+        "timestamp": "2023-01-13 20:11:31",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00002029",
+        "from_account": "A0000394",
+        "to_account": "A0000022",
+        "amount": 173.75,
+        "timestamp": "2023-01-18 13:34:11",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00002609",
+        "from_account": "A0000394",
+        "to_account": "A0000286",
+        "amount": 45163.43,
+        "timestamp": "2023-01-22 08:54:36",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00001516",
+        "from_account": "A0000394",
+        "to_account": "A0000035",
+        "amount": 491.17,
+        "timestamp": "2023-01-23 12:31:39",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00001014",
+        "from_account": "A0000179",
+        "to_account": "A0000303",
+        "amount": 3341.94,
+        "timestamp": "2023-01-30 14:57:17",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "T00001951",
+        "from_account": "A0000302",
+        "to_account": "A0000036",
+        "amount": 4917.79,
+        "timestamp": "2023-02-01 10:44:04",
+        "alert_score": 14.0
+      },
+      {
+        "tx_id": "T00001074",
+        "from_account": "A0000394",
+        "to_account": "A0000226",
+        "amount": 234.98,
+        "timestamp": "2023-02-06 14:20:30",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "T00000594",
+        "from_account": "A0000394",
+        "to_account": "A0000290",
+        "amount": 478.31,
+        "timestamp": "2023-02-11 14:51:46",
+        "alert_score": 8.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-522FE3BE",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2023-08-30"
+    },
+    "typologies": {
+      "primary": "shell_company",
+      "all_detected": [
+        "shell_company"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 1223030.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 971411.67,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 302351.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 382125.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 590622.66,
+        "countries": []
+      },
+      {
+        "account_id": "A0000232",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 1139941.05,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 506651.27,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 5116133.96,
+      "n_transactions": 10,
+      "avg_alert_score": 11.08,
+      "max_alert_score": 11.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 10 transaction(s) totaling $5,116,133.96 USD involving 9 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 11.08. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 10
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SHELL_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 382125.37,
+        "timestamp": "2023-01-01 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_2_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 302351.29,
+        "timestamp": "2023-01-15 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "SHELL_2_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 340682.33,
+        "timestamp": "2023-01-20 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_0_000",
+        "from_account": "A0000297",
+        "to_account": "A0000232",
+        "amount": 630729.34,
+        "timestamp": "2023-06-21 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_0_001",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 594876.59,
+        "timestamp": "2023-07-08 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_1_000",
+        "from_account": "A0000035",
+        "to_account": "A0000258",
+        "amount": 656949.71,
+        "timestamp": "2023-07-19 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_0_002",
+        "from_account": "A0000035",
+        "to_account": "A0000316",
+        "amount": 566080.94,
+        "timestamp": "2023-07-25 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_1_001",
+        "from_account": "A0000258",
+        "to_account": "A0000232",
+        "amount": 590622.66,
+        "timestamp": "2023-07-27 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_1_002",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 545064.46,
+        "timestamp": "2023-08-12 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "SHELL_1_003",
+        "from_account": "A0000393",
+        "to_account": "A0000018",
+        "amount": 506651.27,
+        "timestamp": "2023-08-30 00:00:00",
+        "alert_score": 8.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-88A709E7",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-12",
+      "end": "2023-10-29"
+    },
+    "typologies": {
+      "primary": "structuring",
+      "all_detected": [
+        "structuring"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 15,
+        "total_amount": 76456.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 76425.81,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 11,
+        "total_amount": 76163.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 10,
+        "total_amount": 75262.08,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 608942.2,
+      "n_transactions": 64,
+      "avg_alert_score": 10.1094,
+      "max_alert_score": 10.7
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nA single account made repeated deposits or withdrawals systematically below the $10,000 CTR threshold over an extended period. The consistency and regularity of the sub-threshold amounts \u2014 combined with the absence of a legitimate business explanation \u2014 indicates deliberate structuring to avoid mandatory currency transaction reporting.\n\nThis report covers 64 transaction(s) totaling $608,942.20 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 10.11. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File SAR for structuring under 31 USC \u00a7 5324",
+      "Review 90-day lookback for similar patterns",
+      "Contact branch operations for in-person transaction records",
+      "Consider Suspicious Activity Report to IRS for tax evasion indicators"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 64
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "STRUCT_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9106.01,
+        "timestamp": "2023-02-12 21:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_001",
+        "from_account": "A0000306",
+        "to_account": "A0000321",
+        "amount": 9346.24,
+        "timestamp": "2023-02-14 16:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_002",
+        "from_account": "A0000306",
+        "to_account": "A0000230",
+        "amount": 9889.14,
+        "timestamp": "2023-02-15 18:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_003",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 9321.35,
+        "timestamp": "2023-02-17 16:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_004",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9245.27,
+        "timestamp": "2023-02-18 22:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_005",
+        "from_account": "A0000306",
+        "to_account": "A0000018",
+        "amount": 9550.95,
+        "timestamp": "2023-02-20 15:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_006",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9200.57,
+        "timestamp": "2023-02-22 01:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_2_007",
+        "from_account": "A0000306",
+        "to_account": "A0000019",
+        "amount": 9627.56,
+        "timestamp": "2023-02-23 06:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_4_000",
+        "from_account": "A0000317",
+        "to_account": "A0000395",
+        "amount": 9566.96,
+        "timestamp": "2023-03-02 20:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "STRUCT_4_001",
+        "from_account": "A0000317",
+        "to_account": "A0000019",
+        "amount": 9703.48,
+        "timestamp": "2023-03-04 13:00:00",
+        "alert_score": 10.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-FCE63C0F",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-25",
+      "end": "2023-11-01"
+    },
+    "typologies": {
+      "primary": "layering",
+      "all_detected": [
+        "layering"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000297",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 278298.76,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 76975.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 110320.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 279025.14,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 82595.94,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 76165.35,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 103883.16,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 42956.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 119313.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 1678085.41,
+      "n_transactions": 20,
+      "avg_alert_score": 10.065,
+      "max_alert_score": 11.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were observed moving through a sequential chain of accounts in rapid succession, with each transfer slightly reducing the amount \u2014 consistent with fee skimming during layering. This multi-hop structure is designed to obscure the original source of funds and create a complex audit trail. The pattern is indicative of the layering phase of money laundering.\n\nThis report covers 20 transaction(s) totaling $1,678,085.41 USD involving 10 account(s) (A0000297, A0000019, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 10.07. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Map the full transaction chain and identify the ultimate beneficial owner",
+      "Issue account holds on all intermediary accounts",
+      "Request correspondent bank records for cross-border legs",
+      "Submit SAR to FinCEN within 30 days of detection"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "LAYER_0_000",
+        "from_account": "A0000319",
+        "to_account": "A0000049",
+        "amount": 119313.33,
+        "timestamp": "2023-02-25 02:00:00",
+        "alert_score": 7.3
+      },
+      {
+        "tx_id": "LAYER_0_001",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 113890.48,
+        "timestamp": "2023-02-25 11:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "LAYER_0_002",
+        "from_account": "A0000297",
+        "to_account": "A0000180",
+        "amount": 112187.02,
+        "timestamp": "2023-02-25 16:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "LAYER_0_003",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 110320.29,
+        "timestamp": "2023-02-26 03:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "LAYER_4_000",
+        "from_account": "A0000302",
+        "to_account": "A0000395",
+        "amount": 108971.75,
+        "timestamp": "2023-05-25 08:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "LAYER_4_001",
+        "from_account": "A0000395",
+        "to_account": "A0000321",
+        "amount": 107826.72,
+        "timestamp": "2023-05-25 10:00:00",
+        "alert_score": 7.3
+      },
+      {
+        "tx_id": "LAYER_4_002",
+        "from_account": "A0000321",
+        "to_account": "A0000297",
+        "amount": 103883.16,
+        "timestamp": "2023-05-25 12:00:00",
+        "alert_score": 7.3
+      },
+      {
+        "tx_id": "LAYER_4_003",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 96195.63,
+        "timestamp": "2023-05-25 22:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "LAYER_1_000",
+        "from_account": "A0000316",
+        "to_account": "A0000226",
+        "amount": 48287.52,
+        "timestamp": "2023-06-28 09:00:00",
+        "alert_score": 7.3
+      },
+      {
+        "tx_id": "LAYER_1_001",
+        "from_account": "A0000226",
+        "to_account": "A0000018",
+        "amount": 42956.41,
+        "timestamp": "2023-06-28 17:00:00",
+        "alert_score": 10.8
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-1B53619C",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-03-21",
+      "end": "2023-12-18"
+    },
+    "typologies": {
+      "primary": "tbml",
+      "all_detected": [
+        "tbml"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 541140.88,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 664943.22,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1007560.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 767780.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 445905.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 158024.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 623270.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 274094.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 426919.01,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 9861986.8,
+      "n_transactions": 20,
+      "avg_alert_score": 10.7,
+      "max_alert_score": 13.0
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 20 transaction(s) totaling $9,861,986.80 USD involving 10 account(s) (A0000035, A0000019, A0000317, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 10.70. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "TBML_2_000",
+        "from_account": "A0000316",
+        "to_account": "A0000395",
+        "amount": 426919.01,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "TBML_2_001",
+        "from_account": "A0000232",
+        "to_account": "A0000395",
+        "amount": 464880.34,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_2_003",
+        "from_account": "A0000019",
+        "to_account": "A0000395",
+        "amount": 470427.64,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_2_002",
+        "from_account": "A0000179",
+        "to_account": "A0000395",
+        "amount": 445905.04,
+        "timestamp": "2023-03-22 00:00:00",
+        "alert_score": 13.0
+      },
+      {
+        "tx_id": "TBML_2_KB",
+        "from_account": "A0000395",
+        "to_account": "A0000230",
+        "amount": 81698.15,
+        "timestamp": "2023-03-28 00:00:00",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "TBML_3_001",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 274494.32,
+        "timestamp": "2023-03-30 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_3_000",
+        "from_account": "A0000230",
+        "to_account": "A0000019",
+        "amount": 274094.27,
+        "timestamp": "2023-03-31 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_3_KB",
+        "from_account": "A0000019",
+        "to_account": "A0000321",
+        "amount": 70713.24,
+        "timestamp": "2023-04-12 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_0_004",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 640547.52,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "TBML_0_000",
+        "from_account": "A0000226",
+        "to_account": "A0000393",
+        "amount": 623270.4,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 11.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-DF19888E",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-04",
+      "end": "2024-01-14"
+    },
+    "typologies": {
+      "primary": "round_tripping",
+      "all_detected": [
+        "round_tripping"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 148374.2,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 415144.48,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 171752.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 245898.19,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 120174.83,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 115028.06,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 264714.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 166009.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 437114.74,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 181435.87,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 3555480.51,
+      "n_transactions": 20,
+      "avg_alert_score": 10.345,
+      "max_alert_score": 11.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were traced leaving the originating account, transiting through one or more foreign jurisdictions classified as high-risk by FATF, and returning to the originating account or a closely associated account. This circular flow, commonly called round-tripping, is used to disguise illicit funds as legitimate foreign investment income.\n\nThis report covers 20 transaction(s) totaling $3,555,480.51 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 10.35. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence on all foreign counterparties",
+      "Request SWIFT MT103 records for cross-border transfers",
+      "Assess PEP (Politically Exposed Person) connections",
+      "Coordinate with OFAC for sanctions screening"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 20
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "ROUND_1_000",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 190617.7,
+        "timestamp": "2023-04-04 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 176734.13,
+        "timestamp": "2023-04-17 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "ROUND_1_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 171752.53,
+        "timestamp": "2023-05-07 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_1_003",
+        "from_account": "A0000316",
+        "to_account": "A0000393",
+        "amount": 167488.11,
+        "timestamp": "2023-05-16 00:00:00",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "ROUND_1_004",
+        "from_account": "A0000393",
+        "to_account": "A0000049",
+        "amount": 152134.65,
+        "timestamp": "2023-06-07 00:00:00",
+        "alert_score": 7.3
+      },
+      {
+        "tx_id": "ROUND_3_000",
+        "from_account": "A0000018",
+        "to_account": "A0000230",
+        "amount": 181435.87,
+        "timestamp": "2023-06-18 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "ROUND_3_001",
+        "from_account": "A0000230",
+        "to_account": "A0000049",
+        "amount": 166009.4,
+        "timestamp": "2023-07-15 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "ROUND_3_002",
+        "from_account": "A0000049",
+        "to_account": "A0000232",
+        "amount": 152731.4,
+        "timestamp": "2023-08-01 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "ROUND_3_003",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 152983.9,
+        "timestamp": "2023-08-18 00:00:00",
+        "alert_score": 10.8
+      },
+      {
+        "tx_id": "ROUND_3_004",
+        "from_account": "A0000035",
+        "to_account": "A0000018",
+        "amount": 148374.2,
+        "timestamp": "2023-09-07 00:00:00",
+        "alert_score": 11.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-740A1288",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-29",
+      "end": "2023-12-06"
+    },
+    "typologies": {
+      "primary": "smurfing",
+      "all_detected": [
+        "smurfing"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9586.43,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 27973.57,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 14,
+        "total_amount": 19045.73,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28941.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 4,
+        "total_amount": 38116.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 18769.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 9090.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9523.24,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 9,
+        "total_amount": 28736.53,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 28027.96,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 456084.04,
+      "n_transactions": 48,
+      "avg_alert_score": 9.6792,
+      "max_alert_score": 10.7
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nMultiple transactions were observed originating from different accounts and converging on a single destination account within a compressed time window. Each individual transaction was structured to fall below the $10,000 Currency Transaction Reporting (CTR) threshold, a pattern consistent with smurfing. The coordinated nature and timing of these transactions suggest deliberate avoidance of regulatory reporting obligations.\n\nThis report covers 48 transaction(s) totaling $456,084.04 USD involving 10 account(s) (A0000035, A0000317, A0000180, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 9.68. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File CTR for aggregate transactions exceeding $10,000 by the same beneficial owner",
+      "Freeze implicated accounts pending AML investigation",
+      "Request source-of-funds documentation from account holders",
+      "Escalate to law enforcement if structuring is confirmed"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 48
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SMURF_2_002",
+        "from_account": "A0000393",
+        "to_account": "A0000226",
+        "amount": 9988.47,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 7.2
+      },
+      {
+        "tx_id": "SMURF_2_000",
+        "from_account": "A0000297",
+        "to_account": "A0000226",
+        "amount": 9880.37,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "SMURF_2_005",
+        "from_account": "A0000018",
+        "to_account": "A0000226",
+        "amount": 9893.03,
+        "timestamp": "2023-04-29 00:06:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_2_003",
+        "from_account": "A0000258",
+        "to_account": "A0000226",
+        "amount": 9681.26,
+        "timestamp": "2023-04-29 00:08:00",
+        "alert_score": 10.0
+      },
+      {
+        "tx_id": "SMURF_2_004",
+        "from_account": "A0000302",
+        "to_account": "A0000226",
+        "amount": 9776.35,
+        "timestamp": "2023-04-29 00:09:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "SMURF_2_001",
+        "from_account": "A0000395",
+        "to_account": "A0000226",
+        "amount": 9863.81,
+        "timestamp": "2023-04-29 00:24:00",
+        "alert_score": 7.2
+      },
+      {
+        "tx_id": "SMURF_5_000",
+        "from_account": "A0000019",
+        "to_account": "A0000180",
+        "amount": 9118.09,
+        "timestamp": "2023-05-11 00:08:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "SMURF_5_002",
+        "from_account": "A0000321",
+        "to_account": "A0000180",
+        "amount": 9149.89,
+        "timestamp": "2023-05-11 00:15:00",
+        "alert_score": 7.2
+      },
+      {
+        "tx_id": "SMURF_5_001",
+        "from_account": "A0000232",
+        "to_account": "A0000180",
+        "amount": 9295.62,
+        "timestamp": "2023-05-11 00:20:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "SMURF_5_003",
+        "from_account": "A0000302",
+        "to_account": "A0000180",
+        "amount": 9378.01,
+        "timestamp": "2023-05-11 00:22:00",
+        "alert_score": 10.7
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-D55A1AA3",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-05-24",
+      "end": "2023-09-07"
+    },
+    "typologies": {
+      "primary": "crypto_fiat",
+      "all_detected": [
+        "crypto_fiat"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 39778.01,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6757.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6301.34,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 5,
+        "total_amount": 30535.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 23640.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 173096.41,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9256.46,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 30388.64,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 448157.76,
+      "n_transactions": 15,
+      "avg_alert_score": 10.1933,
+      "max_alert_score": 11.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 15 transaction(s) totaling $448,157.76 USD involving 10 account(s) (A0000035, A0000319, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 10.19. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 15
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "CF_0_AGG_000",
+        "from_account": "A0000302",
+        "to_account": "A0000018",
+        "amount": 9586.41,
+        "timestamp": "2023-05-24 00:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "CF_0_AGG_002",
+        "from_account": "A0000258",
+        "to_account": "A0000018",
+        "amount": 9256.46,
+        "timestamp": "2023-05-24 02:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "CF_0_AGG_001",
+        "from_account": "A0000019",
+        "to_account": "A0000018",
+        "amount": 6757.33,
+        "timestamp": "2023-05-25 00:00:00",
+        "alert_score": 10.7
+      },
+      {
+        "tx_id": "CF_0_OFFRAMP",
+        "from_account": "A0000018",
+        "to_account": "A0000180",
+        "amount": 23640.0,
+        "timestamp": "2023-06-03 00:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_2_AGG_003",
+        "from_account": "A0000395",
+        "to_account": "A0000302",
+        "amount": 30388.64,
+        "timestamp": "2023-08-18 08:00:00",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "CF_2_AGG_004",
+        "from_account": "A0000035",
+        "to_account": "A0000302",
+        "amount": 39778.01,
+        "timestamp": "2023-08-18 18:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_2_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000302",
+        "amount": 35642.09,
+        "timestamp": "2023-08-18 20:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_2_AGG_001",
+        "from_account": "A0000226",
+        "to_account": "A0000302",
+        "amount": 34792.63,
+        "timestamp": "2023-08-18 22:00:00",
+        "alert_score": 11.5
+      },
+      {
+        "tx_id": "CF_2_AGG_000",
+        "from_account": "A0000393",
+        "to_account": "A0000302",
+        "amount": 33752.17,
+        "timestamp": "2023-08-19 18:00:00",
+        "alert_score": 8.0
+      },
+      {
+        "tx_id": "CF_1_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000316",
+        "amount": 8802.37,
+        "timestamp": "2023-08-25 04:00:00",
+        "alert_score": 10.7
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-A5907FE0",
+    "universe_id": "universe_graph_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2024-01-01"
+    },
+    "typologies": {
+      "primary": "unknown",
+      "all_detected": [
+        "mixed"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000013",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000253",
+        "role": "originator",
+        "transaction_count": 1199,
+        "total_amount": 3524096.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000238",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000017",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000313",
+        "role": "beneficiary",
+        "transaction_count": 8,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000023",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000174",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000167",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000028",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000069",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 7569686.74,
+      "n_transactions": 2358,
+      "avg_alert_score": 6.3498,
+      "max_alert_score": 11.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 2358 transaction(s) totaling $7,569,686.74 USD involving 10 account(s) (A0000013, A0000253, A0000238, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_graph_enhanced' with an average alert score of 6.35. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_graph_enhanced",
+      "typology_cluster_size": 2358
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "T00002658",
+        "from_account": "A0000210",
+        "to_account": "A0000175",
+        "amount": 13.68,
+        "timestamp": "2023-01-01 11:03:22",
+        "alert_score": 8.5
+      },
+      {
+        "tx_id": "T00001450",
+        "from_account": "A0000210",
+        "to_account": "A0000194",
+        "amount": 37.74,
+        "timestamp": "2023-01-01 11:34:58",
+        "alert_score": 8.5
+      },
+      {
+        "tx_id": "T00001406",
+        "from_account": "A0000253",
+        "to_account": "A0000300",
+        "amount": 407.92,
+        "timestamp": "2023-01-02 00:57:22",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00002861",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 502.75,
+        "timestamp": "2023-01-02 08:22:11",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00000564",
+        "from_account": "A0000253",
+        "to_account": "A0000396",
+        "amount": 2318.51,
+        "timestamp": "2023-01-02 09:11:18",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00002883",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 198.72,
+        "timestamp": "2023-01-02 13:43:19",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00001397",
+        "from_account": "A0000253",
+        "to_account": "A0000366",
+        "amount": 1268.24,
+        "timestamp": "2023-01-02 17:39:25",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00002879",
+        "from_account": "A0000253",
+        "to_account": "A0000043",
+        "amount": 98.66,
+        "timestamp": "2023-01-02 18:52:36",
+        "alert_score": 5.0
+      },
+      {
+        "tx_id": "T00000636",
+        "from_account": "A0000080",
+        "to_account": "A0000129",
+        "amount": 491.56,
+        "timestamp": "2023-01-02 18:56:25",
+        "alert_score": 5.5
+      },
+      {
+        "tx_id": "T00001347",
+        "from_account": "A0000253",
+        "to_account": "A0000087",
+        "amount": 355.36,
+        "timestamp": "2023-01-02 19:42:29",
+        "alert_score": 5.0
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-B1480174",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2023-08-12"
+    },
+    "typologies": {
+      "primary": "shell_company",
+      "all_detected": [
+        "shell_company"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 656949.71,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 340682.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 302351.29,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 382125.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 590622.66,
+        "countries": []
+      },
+      {
+        "account_id": "A0000232",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 1139941.05,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 3412672.41,
+      "n_transactions": 7,
+      "avg_alert_score": 3.1571,
+      "max_alert_score": 3.3
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 7 transaction(s) totaling $3,412,672.41 USD involving 8 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 3.16. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 7
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SHELL_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 382125.37,
+        "timestamp": "2023-01-01 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SHELL_2_002",
+        "from_account": "A0000019",
+        "to_account": "A0000316",
+        "amount": 302351.29,
+        "timestamp": "2023-01-15 00:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "SHELL_2_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 340682.33,
+        "timestamp": "2023-01-20 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SHELL_0_001",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 594876.59,
+        "timestamp": "2023-07-08 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SHELL_1_000",
+        "from_account": "A0000035",
+        "to_account": "A0000258",
+        "amount": 656949.71,
+        "timestamp": "2023-07-19 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SHELL_1_001",
+        "from_account": "A0000258",
+        "to_account": "A0000232",
+        "amount": 590622.66,
+        "timestamp": "2023-07-27 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SHELL_1_002",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 545064.46,
+        "timestamp": "2023-08-12 00:00:00",
+        "alert_score": 3.3
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-6A40562A",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-12",
+      "end": "2023-10-29"
+    },
+    "typologies": {
+      "primary": "structuring",
+      "all_detected": [
+        "structuring"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 6,
+        "total_amount": 28564.27,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 8,
+        "total_amount": 57483.14,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 7,
+        "total_amount": 57254.4,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9856.09,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 257940.86,
+      "n_transactions": 27,
+      "avg_alert_score": 3.3111,
+      "max_alert_score": 4.7
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nA single account made repeated deposits or withdrawals systematically below the $10,000 CTR threshold over an extended period. The consistency and regularity of the sub-threshold amounts \u2014 combined with the absence of a legitimate business explanation \u2014 indicates deliberate structuring to avoid mandatory currency transaction reporting.\n\nThis report covers 27 transaction(s) totaling $257,940.86 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 3.31. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File SAR for structuring under 31 USC \u00a7 5324",
+      "Review 90-day lookback for similar patterns",
+      "Contact branch operations for in-person transaction records",
+      "Consider Suspicious Activity Report to IRS for tax evasion indicators"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 27
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "STRUCT_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000035",
+        "amount": 9106.01,
+        "timestamp": "2023-02-12 21:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "STRUCT_4_000",
+        "from_account": "A0000317",
+        "to_account": "A0000395",
+        "amount": 9566.96,
+        "timestamp": "2023-03-02 20:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "STRUCT_4_002",
+        "from_account": "A0000317",
+        "to_account": "A0000316",
+        "amount": 9609.44,
+        "timestamp": "2023-03-05 07:00:00",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "STRUCT_4_003",
+        "from_account": "A0000317",
+        "to_account": "A0000019",
+        "amount": 9345.37,
+        "timestamp": "2023-03-05 21:00:00",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "STRUCT_4_004",
+        "from_account": "A0000317",
+        "to_account": "A0000302",
+        "amount": 9772.37,
+        "timestamp": "2023-03-06 15:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "STRUCT_4_006",
+        "from_account": "A0000317",
+        "to_account": "A0000179",
+        "amount": 9486.51,
+        "timestamp": "2023-03-08 20:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "STRUCT_4_007",
+        "from_account": "A0000317",
+        "to_account": "A0000232",
+        "amount": 9702.49,
+        "timestamp": "2023-03-09 11:00:00",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "STRUCT_7_000",
+        "from_account": "A0000395",
+        "to_account": "A0000302",
+        "amount": 9719.94,
+        "timestamp": "2023-03-18 06:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "STRUCT_7_002",
+        "from_account": "A0000395",
+        "to_account": "A0000179",
+        "amount": 9559.2,
+        "timestamp": "2023-03-20 22:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "STRUCT_7_003",
+        "from_account": "A0000395",
+        "to_account": "A0000230",
+        "amount": 9275.57,
+        "timestamp": "2023-03-21 21:00:00",
+        "alert_score": 3.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-DB88AFF3",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-02-25",
+      "end": "2023-11-01"
+    },
+    "typologies": {
+      "primary": "layering",
+      "all_detected": [
+        "layering"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 182103.13,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 113890.48,
+        "countries": []
+      },
+      {
+        "account_id": "A0000319",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 119313.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 48287.52,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 93985.86,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 82595.94,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 76165.35,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 849487.56,
+      "n_transactions": 10,
+      "avg_alert_score": 2.98,
+      "max_alert_score": 3.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were observed moving through a sequential chain of accounts in rapid succession, with each transfer slightly reducing the amount \u2014 consistent with fee skimming during layering. This multi-hop structure is designed to obscure the original source of funds and create a complex audit trail. The pattern is indicative of the layering phase of money laundering.\n\nThis report covers 10 transaction(s) totaling $849,487.56 USD involving 10 account(s) (A0000297, A0000049, A0000319, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 2.98. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Map the full transaction chain and identify the ultimate beneficial owner",
+      "Issue account holds on all intermediary accounts",
+      "Request correspondent bank records for cross-border legs",
+      "Submit SAR to FinCEN within 30 days of detection"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 10
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "LAYER_0_000",
+        "from_account": "A0000319",
+        "to_account": "A0000049",
+        "amount": 119313.33,
+        "timestamp": "2023-02-25 02:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "LAYER_0_001",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 113890.48,
+        "timestamp": "2023-02-25 11:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "LAYER_0_002",
+        "from_account": "A0000297",
+        "to_account": "A0000180",
+        "amount": 112187.02,
+        "timestamp": "2023-02-25 16:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "LAYER_1_000",
+        "from_account": "A0000316",
+        "to_account": "A0000226",
+        "amount": 48287.52,
+        "timestamp": "2023-06-28 09:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "LAYER_1_001",
+        "from_account": "A0000226",
+        "to_account": "A0000018",
+        "amount": 42956.41,
+        "timestamp": "2023-06-28 17:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "LAYER_2_003",
+        "from_account": "A0000297",
+        "to_account": "A0000306",
+        "amount": 69916.11,
+        "timestamp": "2023-09-21 02:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "LAYER_3_000",
+        "from_account": "A0000302",
+        "to_account": "A0000395",
+        "amount": 93985.86,
+        "timestamp": "2023-11-01 07:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "LAYER_3_001",
+        "from_account": "A0000395",
+        "to_account": "A0000258",
+        "amount": 90189.54,
+        "timestamp": "2023-11-01 12:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "LAYER_3_002",
+        "from_account": "A0000258",
+        "to_account": "A0000179",
+        "amount": 82595.94,
+        "timestamp": "2023-11-01 13:00:00",
+        "alert_score": 3.5
+      },
+      {
+        "tx_id": "LAYER_3_003",
+        "from_account": "A0000179",
+        "to_account": "A0000297",
+        "amount": 76165.35,
+        "timestamp": "2023-11-01 23:00:00",
+        "alert_score": 3.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-FFE8CD87",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-03-21",
+      "end": "2023-11-25"
+    },
+    "typologies": {
+      "primary": "tbml",
+      "all_detected": [
+        "tbml"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1441146.79,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 470427.64,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 426919.01,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 664943.22,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1007560.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 648704.98,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 445905.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 8002473.63,
+      "n_transactions": 15,
+      "avg_alert_score": 3.3133,
+      "max_alert_score": 3.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 15 transaction(s) totaling $8,002,473.63 USD involving 10 account(s) (A0000035, A0000049, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 3.31. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 15
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "TBML_2_000",
+        "from_account": "A0000316",
+        "to_account": "A0000395",
+        "amount": 426919.01,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_2_001",
+        "from_account": "A0000232",
+        "to_account": "A0000395",
+        "amount": 464880.34,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_2_003",
+        "from_account": "A0000019",
+        "to_account": "A0000395",
+        "amount": 470427.64,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_2_002",
+        "from_account": "A0000179",
+        "to_account": "A0000395",
+        "amount": 445905.04,
+        "timestamp": "2023-03-22 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_3_001",
+        "from_account": "A0000180",
+        "to_account": "A0000019",
+        "amount": 274494.32,
+        "timestamp": "2023-03-30 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_3_000",
+        "from_account": "A0000230",
+        "to_account": "A0000019",
+        "amount": 274094.27,
+        "timestamp": "2023-03-31 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_0_004",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 640547.52,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_0_000",
+        "from_account": "A0000226",
+        "to_account": "A0000393",
+        "amount": 623270.4,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_0_001",
+        "from_account": "A0000317",
+        "to_account": "A0000393",
+        "amount": 664943.22,
+        "timestamp": "2023-10-16 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "TBML_0_003",
+        "from_account": "A0000049",
+        "to_account": "A0000393",
+        "amount": 652577.99,
+        "timestamp": "2023-10-17 00:00:00",
+        "alert_score": 3.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-8C9F6C2E",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-04",
+      "end": "2024-01-14"
+    },
+    "typologies": {
+      "primary": "round_tripping",
+      "all_detected": [
+        "round_tripping"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000297",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 176734.13,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 264714.08,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 245898.19,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000049",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 190617.7,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 152134.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000296",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 402439.83,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 1432538.58,
+      "n_transactions": 7,
+      "avg_alert_score": 2.7286,
+      "max_alert_score": 3.3
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nFunds were traced leaving the originating account, transiting through one or more foreign jurisdictions classified as high-risk by FATF, and returning to the originating account or a closely associated account. This circular flow, commonly called round-tripping, is used to disguise illicit funds as legitimate foreign investment income.\n\nThis report covers 7 transaction(s) totaling $1,432,538.58 USD involving 9 account(s) (A0000297, A0000226, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 2.73. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence on all foreign counterparties",
+      "Request SWIFT MT103 records for cross-border transfers",
+      "Assess PEP (Politically Exposed Person) connections",
+      "Coordinate with OFAC for sanctions screening"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 7
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "ROUND_1_000",
+        "from_account": "A0000049",
+        "to_account": "A0000297",
+        "amount": 190617.7,
+        "timestamp": "2023-04-04 00:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "ROUND_1_001",
+        "from_account": "A0000297",
+        "to_account": "A0000019",
+        "amount": 176734.13,
+        "timestamp": "2023-04-17 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "ROUND_1_004",
+        "from_account": "A0000393",
+        "to_account": "A0000049",
+        "amount": 152134.65,
+        "timestamp": "2023-06-07 00:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "ROUND_2_000",
+        "from_account": "A0000296",
+        "to_account": "A0000316",
+        "amount": 291188.31,
+        "timestamp": "2023-11-02 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "ROUND_2_002",
+        "from_account": "A0000226",
+        "to_account": "A0000317",
+        "amount": 264714.08,
+        "timestamp": "2023-11-27 00:00:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "ROUND_2_003",
+        "from_account": "A0000317",
+        "to_account": "A0000297",
+        "amount": 245898.19,
+        "timestamp": "2023-12-13 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "ROUND_0_004",
+        "from_account": "A0000296",
+        "to_account": "A0000321",
+        "amount": 111251.52,
+        "timestamp": "2024-01-14 00:00:00",
+        "alert_score": 2.3
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-C196009F",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-04-29",
+      "end": "2023-12-06"
+    },
+    "typologies": {
+      "primary": "smurfing",
+      "all_detected": [
+        "smurfing"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "beneficiary",
+        "transaction_count": 5,
+        "total_amount": 9586.43,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9796.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 18952.21,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 18398.75,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 6,
+        "total_amount": 9148.95,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 9776.35,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 19004.51,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 9149.89,
+        "countries": []
+      },
+      {
+        "account_id": "A0000226",
+        "role": "beneficiary",
+        "transaction_count": 5,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 19399.33,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 219739.1,
+      "n_transactions": 23,
+      "avg_alert_score": 3.0478,
+      "max_alert_score": 3.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nMultiple transactions were observed originating from different accounts and converging on a single destination account within a compressed time window. Each individual transaction was structured to fall below the $10,000 Currency Transaction Reporting (CTR) threshold, a pattern consistent with smurfing. The coordinated nature and timing of these transactions suggest deliberate avoidance of regulatory reporting obligations.\n\nThis report covers 23 transaction(s) totaling $219,739.10 USD involving 10 account(s) (A0000035, A0000297, A0000019, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 3.05. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "File CTR for aggregate transactions exceeding $10,000 by the same beneficial owner",
+      "Freeze implicated accounts pending AML investigation",
+      "Request source-of-funds documentation from account holders",
+      "Escalate to law enforcement if structuring is confirmed"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 23
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SMURF_2_002",
+        "from_account": "A0000393",
+        "to_account": "A0000226",
+        "amount": 9988.47,
+        "timestamp": "2023-04-29 00:03:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_2_005",
+        "from_account": "A0000018",
+        "to_account": "A0000226",
+        "amount": 9893.03,
+        "timestamp": "2023-04-29 00:06:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "SMURF_2_003",
+        "from_account": "A0000258",
+        "to_account": "A0000226",
+        "amount": 9681.26,
+        "timestamp": "2023-04-29 00:08:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "SMURF_2_004",
+        "from_account": "A0000302",
+        "to_account": "A0000226",
+        "amount": 9776.35,
+        "timestamp": "2023-04-29 00:09:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_2_001",
+        "from_account": "A0000395",
+        "to_account": "A0000226",
+        "amount": 9863.81,
+        "timestamp": "2023-04-29 00:24:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_5_002",
+        "from_account": "A0000321",
+        "to_account": "A0000180",
+        "amount": 9149.89,
+        "timestamp": "2023-05-11 00:15:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_5_004",
+        "from_account": "A0000316",
+        "to_account": "A0000180",
+        "amount": 9110.91,
+        "timestamp": "2023-05-11 00:23:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_5_005",
+        "from_account": "A0000317",
+        "to_account": "A0000180",
+        "amount": 9297.02,
+        "timestamp": "2023-05-11 00:29:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "SMURF_4_003",
+        "from_account": "A0000395",
+        "to_account": "A0000321",
+        "amount": 9593.25,
+        "timestamp": "2023-06-26 00:07:00",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "SMURF_4_001",
+        "from_account": "A0000019",
+        "to_account": "A0000321",
+        "amount": 9457.6,
+        "timestamp": "2023-06-26 00:22:00",
+        "alert_score": 3.3
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-4DD304D4",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-06-03",
+      "end": "2023-09-07"
+    },
+    "typologies": {
+      "primary": "crypto_fiat",
+      "all_detected": [
+        "crypto_fiat"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 6301.34,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 30535.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 23640.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000302",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 30388.64,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 7419.63,
+        "countries": []
+      },
+      {
+        "account_id": "A0000230",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 35642.09,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 33752.17,
+        "countries": []
+      },
+      {
+        "account_id": "A0000296",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 7995.68,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 175674.55,
+      "n_transactions": 8,
+      "avg_alert_score": 3.3,
+      "max_alert_score": 3.3
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 8 transaction(s) totaling $175,674.55 USD involving 10 account(s) (A0000306, A0000316, A0000018, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 3.30. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 8
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "CF_0_OFFRAMP",
+        "from_account": "A0000018",
+        "to_account": "A0000180",
+        "amount": 23640.0,
+        "timestamp": "2023-06-03 00:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_2_AGG_003",
+        "from_account": "A0000395",
+        "to_account": "A0000302",
+        "amount": 30388.64,
+        "timestamp": "2023-08-18 08:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_2_AGG_002",
+        "from_account": "A0000230",
+        "to_account": "A0000302",
+        "amount": 35642.09,
+        "timestamp": "2023-08-18 20:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_2_AGG_000",
+        "from_account": "A0000393",
+        "to_account": "A0000302",
+        "amount": 33752.17,
+        "timestamp": "2023-08-19 18:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_1_AGG_001",
+        "from_account": "A0000306",
+        "to_account": "A0000316",
+        "amount": 6301.34,
+        "timestamp": "2023-08-25 09:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_1_AGG_000",
+        "from_account": "A0000321",
+        "to_account": "A0000316",
+        "amount": 7419.63,
+        "timestamp": "2023-08-26 16:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_1_AGG_003",
+        "from_account": "A0000296",
+        "to_account": "A0000316",
+        "amount": 7995.68,
+        "timestamp": "2023-08-26 21:00:00",
+        "alert_score": 3.3
+      },
+      {
+        "tx_id": "CF_1_OFFRAMP",
+        "from_account": "A0000316",
+        "to_account": "A0000302",
+        "amount": 30535.0,
+        "timestamp": "2023-09-07 00:00:00",
+        "alert_score": 3.3
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-B5400325",
+    "universe_id": "universe_conservative",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2024-01-01"
+    },
+    "typologies": {
+      "primary": "unknown",
+      "all_detected": [
+        "mixed"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000013",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000253",
+        "role": "originator",
+        "transaction_count": 1199,
+        "total_amount": 3524096.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000238",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000017",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000313",
+        "role": "beneficiary",
+        "transaction_count": 7,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000023",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000174",
+        "role": "originator",
+        "transaction_count": 5,
+        "total_amount": 5657.15,
+        "countries": []
+      },
+      {
+        "account_id": "A0000167",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000028",
+        "role": "beneficiary",
+        "transaction_count": 3,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000069",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 7015981.04,
+      "n_transactions": 2020,
+      "avg_alert_score": 4.0834,
+      "max_alert_score": 8.2
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 2020 transaction(s) totaling $7,015,981.04 USD involving 10 account(s) (A0000013, A0000253, A0000238, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_conservative' with an average alert score of 4.08. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_conservative",
+      "typology_cluster_size": 2020
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "T00002658",
+        "from_account": "A0000210",
+        "to_account": "A0000175",
+        "amount": 13.68,
+        "timestamp": "2023-01-01 11:03:22",
+        "alert_score": 3.8
+      },
+      {
+        "tx_id": "T00001450",
+        "from_account": "A0000210",
+        "to_account": "A0000194",
+        "amount": 37.74,
+        "timestamp": "2023-01-01 11:34:58",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00001406",
+        "from_account": "A0000253",
+        "to_account": "A0000300",
+        "amount": 407.92,
+        "timestamp": "2023-01-02 00:57:22",
+        "alert_score": 3.8
+      },
+      {
+        "tx_id": "T00002861",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 502.75,
+        "timestamp": "2023-01-02 08:22:11",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00000564",
+        "from_account": "A0000253",
+        "to_account": "A0000396",
+        "amount": 2318.51,
+        "timestamp": "2023-01-02 09:11:18",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00002883",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 198.72,
+        "timestamp": "2023-01-02 13:43:19",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00000196",
+        "from_account": "A0000033",
+        "to_account": "A0000194",
+        "amount": 4526.41,
+        "timestamp": "2023-01-02 16:56:11",
+        "alert_score": 2.3
+      },
+      {
+        "tx_id": "T00001397",
+        "from_account": "A0000253",
+        "to_account": "A0000366",
+        "amount": 1268.24,
+        "timestamp": "2023-01-02 17:39:25",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00002879",
+        "from_account": "A0000253",
+        "to_account": "A0000043",
+        "amount": 98.66,
+        "timestamp": "2023-01-02 18:52:36",
+        "alert_score": 2.5
+      },
+      {
+        "tx_id": "T00001347",
+        "from_account": "A0000253",
+        "to_account": "A0000087",
+        "amount": 355.36,
+        "timestamp": "2023-01-02 19:42:29",
+        "alert_score": 2.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-EC8368ED",
+    "universe_id": "universe_ml_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-01",
+      "end": "2023-08-30"
+    },
+    "typologies": {
+      "primary": "shell_company",
+      "all_detected": [
+        "shell_company"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000035",
+        "role": "originator",
+        "transaction_count": 3,
+        "total_amount": 1223030.65,
+        "countries": []
+      },
+      {
+        "account_id": "A0000297",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 630729.34,
+        "countries": []
+      },
+      {
+        "account_id": "A0000306",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 382125.37,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 590622.66,
+        "countries": []
+      },
+      {
+        "account_id": "A0000232",
+        "role": "intermediary",
+        "transaction_count": 4,
+        "total_amount": 1139941.05,
+        "countries": []
+      },
+      {
+        "account_id": "A0000393",
+        "role": "intermediary",
+        "transaction_count": 2,
+        "total_amount": 506651.27,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 4473100.34,
+      "n_transactions": 8,
+      "avg_alert_score": 7.05,
+      "max_alert_score": 7.6
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 8 transaction(s) totaling $4,473,100.34 USD involving 8 account(s) (A0000035, A0000297, A0000306, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_enhanced' with an average alert score of 7.05. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_enhanced",
+      "typology_cluster_size": 8
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "SHELL_2_000",
+        "from_account": "A0000306",
+        "to_account": "A0000297",
+        "amount": 382125.37,
+        "timestamp": "2023-01-01 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "SHELL_0_000",
+        "from_account": "A0000297",
+        "to_account": "A0000232",
+        "amount": 630729.34,
+        "timestamp": "2023-06-21 00:00:00",
+        "alert_score": 6.5
+      },
+      {
+        "tx_id": "SHELL_0_001",
+        "from_account": "A0000232",
+        "to_account": "A0000035",
+        "amount": 594876.59,
+        "timestamp": "2023-07-08 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "SHELL_1_000",
+        "from_account": "A0000035",
+        "to_account": "A0000258",
+        "amount": 656949.71,
+        "timestamp": "2023-07-19 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "SHELL_0_002",
+        "from_account": "A0000035",
+        "to_account": "A0000316",
+        "amount": 566080.94,
+        "timestamp": "2023-07-25 00:00:00",
+        "alert_score": 6.5
+      },
+      {
+        "tx_id": "SHELL_1_001",
+        "from_account": "A0000258",
+        "to_account": "A0000232",
+        "amount": 590622.66,
+        "timestamp": "2023-07-27 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "SHELL_1_002",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 545064.46,
+        "timestamp": "2023-08-12 00:00:00",
+        "alert_score": 6.5
+      },
+      {
+        "tx_id": "SHELL_1_003",
+        "from_account": "A0000393",
+        "to_account": "A0000018",
+        "amount": 506651.27,
+        "timestamp": "2023-08-30 00:00:00",
+        "alert_score": 6.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-8F862437",
+    "universe_id": "universe_ml_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-03-21",
+      "end": "2023-11-25"
+    },
+    "typologies": {
+      "primary": "tbml",
+      "all_detected": [
+        "tbml"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000049",
+        "role": "originator",
+        "transaction_count": 2,
+        "total_amount": 1441146.79,
+        "countries": []
+      },
+      {
+        "account_id": "A0000019",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 470427.64,
+        "countries": []
+      },
+      {
+        "account_id": "A0000316",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 426919.01,
+        "countries": []
+      },
+      {
+        "account_id": "A0000317",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 664943.22,
+        "countries": []
+      },
+      {
+        "account_id": "A0000018",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 648704.98,
+        "countries": []
+      },
+      {
+        "account_id": "A0000180",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 733066.33,
+        "countries": []
+      },
+      {
+        "account_id": "A0000258",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 767780.97,
+        "countries": []
+      },
+      {
+        "account_id": "A0000179",
+        "role": "originator",
+        "transaction_count": 1,
+        "total_amount": 445905.04,
+        "countries": []
+      },
+      {
+        "account_id": "A0000395",
+        "role": "beneficiary",
+        "transaction_count": 4,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000321",
+        "role": "beneficiary",
+        "transaction_count": 5,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 8862298.41,
+      "n_transactions": 14,
+      "avg_alert_score": 7.2714,
+      "max_alert_score": 8.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 14 transaction(s) totaling $8,862,298.41 USD involving 10 account(s) (A0000049, A0000019, A0000316, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_enhanced' with an average alert score of 7.27. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_enhanced",
+      "typology_cluster_size": 14
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "TBML_2_000",
+        "from_account": "A0000316",
+        "to_account": "A0000395",
+        "amount": 426919.01,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_2_001",
+        "from_account": "A0000232",
+        "to_account": "A0000395",
+        "amount": 464880.34,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_2_003",
+        "from_account": "A0000019",
+        "to_account": "A0000395",
+        "amount": 470427.64,
+        "timestamp": "2023-03-21 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_2_002",
+        "from_account": "A0000179",
+        "to_account": "A0000395",
+        "amount": 445905.04,
+        "timestamp": "2023-03-22 00:00:00",
+        "alert_score": 8.5
+      },
+      {
+        "tx_id": "TBML_0_004",
+        "from_account": "A0000232",
+        "to_account": "A0000393",
+        "amount": 640547.52,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_0_000",
+        "from_account": "A0000226",
+        "to_account": "A0000393",
+        "amount": 623270.4,
+        "timestamp": "2023-10-14 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_0_001",
+        "from_account": "A0000317",
+        "to_account": "A0000393",
+        "amount": 664943.22,
+        "timestamp": "2023-10-16 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_0_003",
+        "from_account": "A0000049",
+        "to_account": "A0000393",
+        "amount": 652577.99,
+        "timestamp": "2023-10-17 00:00:00",
+        "alert_score": 6.5
+      },
+      {
+        "tx_id": "TBML_0_002",
+        "from_account": "A0000018",
+        "to_account": "A0000393",
+        "amount": 648704.98,
+        "timestamp": "2023-10-17 00:00:00",
+        "alert_score": 7.6
+      },
+      {
+        "tx_id": "TBML_1_004",
+        "from_account": "A0000049",
+        "to_account": "A0000321",
+        "amount": 788568.8,
+        "timestamp": "2023-11-22 00:00:00",
+        "alert_score": 6.5
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-77B2F6F5",
+    "universe_id": "universe_ml_enhanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-04",
+      "end": "2024-01-01"
+    },
+    "typologies": {
+      "primary": "unknown",
+      "all_detected": [
+        "mixed"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000253",
+        "role": "originator",
+        "transaction_count": 492,
+        "total_amount": 2396556.32,
+        "countries": []
+      },
+      {
+        "account_id": "A0000238",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000017",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000141",
+        "role": "beneficiary",
+        "transaction_count": 15,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000372",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000023",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000174",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000167",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000028",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000349",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 4518846.24,
+      "n_transactions": 555,
+      "avg_alert_score": 5.0782,
+      "max_alert_score": 13.4
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 555 transaction(s) totaling $4,518,846.24 USD involving 10 account(s) (A0000253, A0000238, A0000017, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_ml_enhanced' with an average alert score of 5.08. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_ml_enhanced",
+      "typology_cluster_size": 555
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "T00000877",
+        "from_account": "A0000253",
+        "to_account": "A0000097",
+        "amount": 18546.96,
+        "timestamp": "2023-01-04 09:40:44",
+        "alert_score": 4.4
+      },
+      {
+        "tx_id": "T00001588",
+        "from_account": "A0000253",
+        "to_account": "A0000314",
+        "amount": 412.38,
+        "timestamp": "2023-01-04 14:52:10",
+        "alert_score": 4.9
+      },
+      {
+        "tx_id": "T00000287",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 432.37,
+        "timestamp": "2023-01-04 18:11:06",
+        "alert_score": 4.9
+      },
+      {
+        "tx_id": "T00002322",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 470.04,
+        "timestamp": "2023-01-04 18:47:56",
+        "alert_score": 4.9
+      },
+      {
+        "tx_id": "T00000640",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 19381.78,
+        "timestamp": "2023-01-05 08:35:05",
+        "alert_score": 5.9
+      },
+      {
+        "tx_id": "T00000447",
+        "from_account": "A0000253",
+        "to_account": "A0000396",
+        "amount": 1221.74,
+        "timestamp": "2023-01-05 09:20:59",
+        "alert_score": 4.9
+      },
+      {
+        "tx_id": "T00000421",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 13643.14,
+        "timestamp": "2023-01-05 15:28:56",
+        "alert_score": 5.9
+      },
+      {
+        "tx_id": "T00002199",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 273.26,
+        "timestamp": "2023-01-05 22:18:24",
+        "alert_score": 4.9
+      },
+      {
+        "tx_id": "T00000637",
+        "from_account": "A0000253",
+        "to_account": "A0000290",
+        "amount": 2885.3,
+        "timestamp": "2023-01-06 05:49:41",
+        "alert_score": 5.7
+      },
+      {
+        "tx_id": "T00000549",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 485.55,
+        "timestamp": "2023-01-06 08:41:25",
+        "alert_score": 4.9
+      }
+    ]
+  },
+  {
+    "sar_id": "SAR-20260524-64ECE0BE",
+    "universe_id": "universe_balanced",
+    "filing_date": "2026-05-24",
+    "activity_period": {
+      "start": "2023-01-04",
+      "end": "2023-12-30"
+    },
+    "typologies": {
+      "primary": "unknown",
+      "all_detected": [
+        "mixed"
+      ]
+    },
+    "subjects": [
+      {
+        "account_id": "A0000253",
+        "role": "originator",
+        "transaction_count": 474,
+        "total_amount": 2322375.76,
+        "countries": []
+      },
+      {
+        "account_id": "A0000238",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000017",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000141",
+        "role": "beneficiary",
+        "transaction_count": 14,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000372",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000023",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000174",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000167",
+        "role": "beneficiary",
+        "transaction_count": 1,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000028",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      },
+      {
+        "account_id": "A0000349",
+        "role": "beneficiary",
+        "transaction_count": 2,
+        "total_amount": 0.0,
+        "countries": []
+      }
+    ],
+    "financial_activity": {
+      "total_suspicious_amount": 2781563.3,
+      "n_transactions": 495,
+      "avg_alert_score": 4.6267,
+      "max_alert_score": 7.5
+    },
+    "narrative": "[AUTOMATED SAR NARRATIVE \u2014 REVIEW BEFORE FILING]\n\nSuspicious transaction patterns were detected that do not conform to the customer's expected behavior or business profile.\n\nThis report covers 495 transaction(s) totaling $2,781,563.30 USD involving 10 account(s) (A0000253, A0000238, A0000017, and others). The activity was flagged by the AML Multiverse Simulator under universe 'universe_balanced' with an average alert score of 4.63. \n\nThis narrative was auto-generated. A compliance officer must review, validate, and complete this SAR before submission to FinCEN.",
+    "recommended_actions": [
+      "Conduct enhanced due diligence",
+      "File SAR with FinCEN",
+      "Escalate to compliance officer"
+    ],
+    "metadata": {
+      "generator": "AMLMultiverseSimulator",
+      "universe": "universe_balanced",
+      "typology_cluster_size": 495
+    },
+    "sample_transactions": [
+      {
+        "tx_id": "T00000287",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 432.37,
+        "timestamp": "2023-01-04 18:11:06",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00002322",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 470.04,
+        "timestamp": "2023-01-04 18:47:56",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00000640",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 19381.78,
+        "timestamp": "2023-01-05 08:35:05",
+        "alert_score": 5.7
+      },
+      {
+        "tx_id": "T00000447",
+        "from_account": "A0000253",
+        "to_account": "A0000396",
+        "amount": 1221.74,
+        "timestamp": "2023-01-05 09:20:59",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00000421",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 13643.14,
+        "timestamp": "2023-01-05 15:28:56",
+        "alert_score": 5.7
+      },
+      {
+        "tx_id": "T00002199",
+        "from_account": "A0000253",
+        "to_account": "A0000136",
+        "amount": 273.26,
+        "timestamp": "2023-01-05 22:18:24",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00000637",
+        "from_account": "A0000253",
+        "to_account": "A0000290",
+        "amount": 2885.3,
+        "timestamp": "2023-01-06 05:49:41",
+        "alert_score": 5.5
+      },
+      {
+        "tx_id": "T00000549",
+        "from_account": "A0000253",
+        "to_account": "A0000036",
+        "amount": 485.55,
+        "timestamp": "2023-01-06 08:41:25",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00002171",
+        "from_account": "A0000253",
+        "to_account": "A0000057",
+        "amount": 564.12,
+        "timestamp": "2023-01-06 09:23:10",
+        "alert_score": 4.7
+      },
+      {
+        "tx_id": "T00000682",
+        "from_account": "A0000253",
+        "to_account": "A0000396",
+        "amount": 192.89,
+        "timestamp": "2023-01-06 09:38:53",
+        "alert_score": 4.7
+      }
+    ]
+  }
+]

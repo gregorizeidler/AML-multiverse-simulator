@@ -1,0 +1,97 @@
+id: universe_balanced
+name: "Balanced AML Strategy"
+description: >
+  Moderate thresholds with nuanced multi-rule scoring. Aims for balanced
+  precision/recall. Typical baseline for most regulated fintechs.
+
+rules:
+  - id: R001
+    name: large_single_transaction
+    field: amount
+    operator: ">"
+    threshold: 10000
+    weight: 1.0
+    alert_level: medium
+    typologies: [structuring, smurfing]
+
+  - id: R002
+    name: rapid_succession_transactions
+    field: tx_count_1h
+    operator: ">"
+    threshold: 5
+    weight: 2.0
+    alert_level: high
+    typologies: [smurfing, layering]
+
+  - id: R003
+    name: velocity_24h
+    field: amount_24h
+    operator: ">"
+    threshold: 15000
+    weight: 1.5
+    alert_level: high
+    typologies: [structuring]
+
+  - id: R004
+    name: unusual_counterparty_count
+    field: unique_counterparties_7d
+    operator: ">"
+    threshold: 10
+    weight: 1.2
+    alert_level: medium
+    typologies: [layering, smurfing]
+
+  - id: R005
+    name: round_amount_flag
+    field: is_round_amount
+    operator: "=="
+    threshold: 1
+    weight: 0.5
+    alert_level: low
+    typologies: [structuring]
+
+  - id: R006
+    name: cross_border_transaction
+    field: is_cross_border
+    operator: "=="
+    threshold: 1
+    weight: 0.8
+    alert_level: medium
+    typologies: [round_tripping, layering]
+
+  - id: R007
+    name: dormant_account_activity
+    field: days_since_last_tx
+    operator: ">"
+    threshold: 60
+    weight: 1.0
+    alert_level: medium
+    typologies: [layering]
+
+  - id: R008
+    name: graph_centrality_high
+    field: betweenness_centrality
+    operator: ">"
+    threshold: 0.10
+    weight: 2.0
+    alert_level: high
+    typologies: [layering, round_tripping]
+
+  - id: R009
+    name: amount_deviation_from_mean
+    description: Transaction amount is more than 5 std devs above account mean
+    field: amount_zscore
+    operator: ">"
+    threshold: 5.0
+    weight: 1.8
+    alert_level: high
+    typologies: [smurfing, structuring]
+
+scoring:
+  method: weighted_sum
+  alert_threshold: 2.5
+  high_risk_threshold: 5.0
+
+cost_model:
+  investigation_cost_per_alert: 150
+  missed_laundering_cost_per_txn: 50000

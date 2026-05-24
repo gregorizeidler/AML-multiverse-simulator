@@ -1,0 +1,100 @@
+id: universe_graph_enhanced
+name: "Graph-Enhanced AML Strategy"
+description: >
+  Heavy emphasis on network topology features. Detects structurally suspicious
+  accounts via centrality, community detection, and cycle analysis.
+
+rules:
+  - id: R001
+    name: large_single_transaction
+    field: amount
+    operator: ">"
+    threshold: 10000
+    weight: 0.8
+    alert_level: medium
+    typologies: [structuring, smurfing]
+
+  - id: R002
+    name: rapid_succession_transactions
+    field: tx_count_1h
+    operator: ">"
+    threshold: 5
+    weight: 1.5
+    alert_level: high
+    typologies: [smurfing]
+
+  - id: R008
+    name: graph_centrality_high
+    field: betweenness_centrality
+    operator: ">"
+    threshold: 0.07
+    weight: 3.0
+    alert_level: high
+    typologies: [layering, round_tripping]
+
+  - id: R011
+    name: graph_in_cycle
+    description: Account participates in a detected transaction cycle
+    field: in_cycle
+    operator: "=="
+    threshold: 1
+    weight: 4.0
+    alert_level: critical
+    typologies: [round_tripping, layering]
+
+  - id: R012
+    name: community_anomaly
+    description: Account belongs to a suspicious transaction community
+    field: community_risk_score
+    operator: ">"
+    threshold: 0.6
+    weight: 2.5
+    alert_level: high
+    typologies: [smurfing, layering, round_tripping]
+
+  - id: R013
+    name: fan_out_ratio
+    description: Account sends to many more counterparties than it receives from
+    field: fan_out_ratio
+    operator: ">"
+    threshold: 5.0
+    weight: 2.0
+    alert_level: high
+    typologies: [smurfing, layering]
+
+  - id: R014
+    name: pass_through_ratio
+    description: Nearly all incoming funds are immediately forwarded out
+    field: pass_through_ratio
+    operator: ">"
+    threshold: 0.85
+    weight: 3.5
+    alert_level: critical
+    typologies: [layering, round_tripping]
+
+  - id: R006
+    name: cross_border_transaction
+    field: is_cross_border
+    operator: "=="
+    threshold: 1
+    weight: 0.7
+    alert_level: medium
+    typologies: [round_tripping]
+
+  - id: R009
+    name: amount_deviation_from_mean
+    field: amount_zscore
+    operator: ">"
+    threshold: 5.0
+    weight: 1.5
+    alert_level: high
+    typologies: [structuring]
+
+scoring:
+  method: weighted_sum
+  alert_threshold: 3.0
+  high_risk_threshold: 6.0
+
+cost_model:
+  investigation_cost_per_alert: 150
+  missed_laundering_cost_per_txn: 50000

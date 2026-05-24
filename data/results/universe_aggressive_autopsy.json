@@ -1,0 +1,1535 @@
+{
+  "false_negatives": [
+    {
+      "tx_id": "SHELL_2_000",
+      "typology": "shell_company",
+      "amount": 382125.37,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "SHELL_2_002",
+      "typology": "shell_company",
+      "amount": 302351.29,
+      "alert_score": 1.0,
+      "threshold": 4.0,
+      "score_gap": 3.0,
+      "rules_fired": [
+        "R001"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.00 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "SHELL_2_001",
+      "typology": "shell_company",
+      "amount": 340682.33,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_000",
+      "typology": "structuring",
+      "amount": 9106.01,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_001",
+      "typology": "structuring",
+      "amount": 9346.24,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_002",
+      "typology": "structuring",
+      "amount": 9889.14,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_003",
+      "typology": "structuring",
+      "amount": 9321.35,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_004",
+      "typology": "structuring",
+      "amount": 9245.27,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_005",
+      "typology": "structuring",
+      "amount": 9550.95,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_006",
+      "typology": "structuring",
+      "amount": 9200.57,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_2_007",
+      "typology": "structuring",
+      "amount": 9627.56,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "LAYER_0_000",
+      "typology": "layering",
+      "amount": 119313.33,
+      "alert_score": 1.0,
+      "threshold": 4.0,
+      "score_gap": 3.0,
+      "rules_fired": [
+        "R001"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.00 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "LAYER_0_001",
+      "typology": "layering",
+      "amount": 113890.48,
+      "alert_score": 1.0,
+      "threshold": 4.0,
+      "score_gap": 3.0,
+      "rules_fired": [
+        "R001"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.00 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "LAYER_0_002",
+      "typology": "layering",
+      "amount": 112187.02,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "LAYER_0_003",
+      "typology": "layering",
+      "amount": 110320.29,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_000",
+      "typology": "structuring",
+      "amount": 9566.96,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_001",
+      "typology": "structuring",
+      "amount": 9703.48,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_002",
+      "typology": "structuring",
+      "amount": 9609.44,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_003",
+      "typology": "structuring",
+      "amount": 9345.37,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_004",
+      "typology": "structuring",
+      "amount": 9772.37,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_005",
+      "typology": "structuring",
+      "amount": 9239.19,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_006",
+      "typology": "structuring",
+      "amount": 9486.51,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_4_007",
+      "typology": "structuring",
+      "amount": 9702.49,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_000",
+      "typology": "structuring",
+      "amount": 9719.94,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_001",
+      "typology": "structuring",
+      "amount": 9726.95,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_002",
+      "typology": "structuring",
+      "amount": 9559.2,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_2_000",
+      "typology": "tbml",
+      "amount": 426919.01,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_2_001",
+      "typology": "tbml",
+      "amount": 464880.34,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_2_003",
+      "typology": "tbml",
+      "amount": 470427.64,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_003",
+      "typology": "structuring",
+      "amount": 9275.57,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_2_002",
+      "typology": "tbml",
+      "amount": 445905.04,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_004",
+      "typology": "structuring",
+      "amount": 9243.19,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_005",
+      "typology": "structuring",
+      "amount": 9245.28,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_006",
+      "typology": "structuring",
+      "amount": 9539.72,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_7_007",
+      "typology": "structuring",
+      "amount": 9191.43,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "TBML_2_KB",
+      "typology": "tbml",
+      "amount": 81698.15,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_3_001",
+      "typology": "tbml",
+      "amount": 274494.32,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_3_000",
+      "typology": "tbml",
+      "amount": 274094.27,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "ROUND_1_000",
+      "typology": "round_tripping",
+      "amount": 190617.7,
+      "alert_score": 1.0,
+      "threshold": 4.0,
+      "score_gap": 3.0,
+      "rules_fired": [
+        "R001"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.00 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "TBML_3_KB",
+      "typology": "tbml",
+      "amount": 70713.24,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "ROUND_1_001",
+      "typology": "round_tripping",
+      "amount": 176734.13,
+      "alert_score": 1.5,
+      "threshold": 4.0,
+      "score_gap": 2.5,
+      "rules_fired": [
+        "R001",
+        "R006"
+      ],
+      "rules_missed": [
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 1.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_1_000",
+      "typology": "structuring",
+      "amount": 9564.1,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_1_001",
+      "typology": "structuring",
+      "amount": 9776.86,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_1_002",
+      "typology": "structuring",
+      "amount": 9799.69,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "STRUCT_1_003",
+      "typology": "structuring",
+      "amount": 9760.34,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "SMURF_2_002",
+      "typology": "smurfing",
+      "amount": 9988.47,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "SMURF_2_000",
+      "typology": "smurfing",
+      "amount": 9880.37,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    },
+    {
+      "tx_id": "SMURF_2_005",
+      "typology": "smurfing",
+      "amount": 9893.03,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "SMURF_2_003",
+      "typology": "smurfing",
+      "amount": 9681.26,
+      "alert_score": 0.0,
+      "threshold": 4.0,
+      "score_gap": 4.0,
+      "rules_fired": [],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "No rules fired \u2014 transaction features are below all rule thresholds"
+    },
+    {
+      "tx_id": "SMURF_2_004",
+      "typology": "smurfing",
+      "amount": 9776.35,
+      "alert_score": 0.5,
+      "threshold": 4.0,
+      "score_gap": 3.5,
+      "rules_fired": [
+        "R006"
+      ],
+      "rules_missed": [
+        "R001",
+        "R002",
+        "R003",
+        "R004",
+        "R008",
+        "R009"
+      ],
+      "reason": "Score 0.50 significantly below threshold 4.00 \u2014 requires new rules or lower thresholds"
+    }
+  ],
+  "false_positives": [
+    {
+      "tx_id": "T00002694",
+      "amount": 191.06,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000747",
+      "amount": 72.54,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001758",
+      "amount": 1738.74,
+      "alert_score": 4.2,
+      "rules_fired": [
+        "R004",
+        "R006",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R004, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001585",
+      "amount": 33040.8,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R001",
+        "R006",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R001, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002087",
+      "amount": 8470.6,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000702",
+      "amount": 289.65,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002172",
+      "amount": 125.5,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001098",
+      "amount": 25273.59,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R001",
+        "R006",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R001, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002118",
+      "amount": 60298.76,
+      "alert_score": 6.0,
+      "rules_fired": [
+        "R001",
+        "R006",
+        "R008",
+        "R009"
+      ],
+      "reason": "4 rule(s) fired (R001, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001681",
+      "amount": 1070.88,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002851",
+      "amount": 13.64,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002214",
+      "amount": 34684.46,
+      "alert_score": 4.7,
+      "rules_fired": [
+        "R001",
+        "R004",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R001, R004, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000313",
+      "amount": 8901.34,
+      "alert_score": 5.2,
+      "rules_fired": [
+        "R003",
+        "R004",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R003, R004, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000946",
+      "amount": 959.82,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002949",
+      "amount": 19.27,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002979",
+      "amount": 613.7,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002838",
+      "amount": 845.08,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002850",
+      "amount": 1071.74,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002705",
+      "amount": 1102.97,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000520",
+      "amount": 3231.86,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001167",
+      "amount": 938.89,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002631",
+      "amount": 40086.16,
+      "alert_score": 5.0,
+      "rules_fired": [
+        "R001",
+        "R003",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R001, R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000749",
+      "amount": 160.05,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001455",
+      "amount": 2322.26,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000995",
+      "amount": 64898.53,
+      "alert_score": 5.5,
+      "rules_fired": [
+        "R001",
+        "R008",
+        "R009"
+      ],
+      "reason": "3 rule(s) fired (R001, R008, R009) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001725",
+      "amount": 1042.94,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001776",
+      "amount": 2187.18,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000801",
+      "amount": 304.65,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000024",
+      "amount": 235.9,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R003",
+        "R006",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R003, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000517",
+      "amount": 539.74,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001616",
+      "amount": 1366.79,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002857",
+      "amount": 199.68,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002901",
+      "amount": 11911.13,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000945",
+      "amount": 102871.1,
+      "alert_score": 5.5,
+      "rules_fired": [
+        "R001",
+        "R008",
+        "R009"
+      ],
+      "reason": "3 rule(s) fired (R001, R008, R009) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002069",
+      "amount": 463.0,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001732",
+      "amount": 1077.23,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002137",
+      "amount": 945.38,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001237",
+      "amount": 988.6,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002353",
+      "amount": 850.72,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000591",
+      "amount": 9389.45,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00000123",
+      "amount": 101.86,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002653",
+      "amount": 409.27,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001923",
+      "amount": 8139.81,
+      "alert_score": 4.5,
+      "rules_fired": [
+        "R003",
+        "R006",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R003, R006, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002152",
+      "amount": 5625.38,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002687",
+      "amount": 931.36,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002240",
+      "amount": 50.0,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00002659",
+      "amount": 463.9,
+      "alert_score": 4.0,
+      "rules_fired": [
+        "R003",
+        "R008"
+      ],
+      "reason": "2 rule(s) fired (R003, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001823",
+      "amount": 45371.56,
+      "alert_score": 4.7,
+      "rules_fired": [
+        "R001",
+        "R004",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R001, R004, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001416",
+      "amount": 408.69,
+      "alert_score": 5.2,
+      "rules_fired": [
+        "R003",
+        "R004",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R003, R004, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    },
+    {
+      "tx_id": "T00001722",
+      "amount": 363.94,
+      "alert_score": 5.2,
+      "rules_fired": [
+        "R003",
+        "R004",
+        "R008"
+      ],
+      "reason": "3 rule(s) fired (R003, R004, R008) on legitimate transaction \u2014 consider raising thresholds or adding AND conditions"
+    }
+  ],
+  "fn_by_typology": {
+    "structuring": 64,
+    "smurfing": 48,
+    "layering": 20,
+    "tbml": 20,
+    "round_tripping": 20,
+    "crypto_fiat": 15,
+    "shell_company": 10
+  },
+  "fn_summary": {
+    "total_missed": 197,
+    "total_illicit": 197,
+    "miss_rate": 1.0,
+    "avg_amount_missed": 110278.53,
+    "avg_score_gap": 0.7995
+  },
+  "fp_summary": {
+    "total_false_alerts": 57,
+    "total_legitimate": 3000,
+    "fp_rate": 0.019,
+    "avg_amount_fp": 9618.8
+  }
+}

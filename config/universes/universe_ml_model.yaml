@@ -1,0 +1,64 @@
+id: universe_ml_model
+name: "ML Model Universe"
+description: >
+  Combines IsolationForest (unsupervised) and XGBoost (supervised, trained on
+  time-split data) to produce calibrated probability scores. Rule thresholds
+  are applied on ML-derived scores rather than raw features.
+
+rules:
+  - id: R_XGB
+    name: xgboost_score
+    description: XGBoost ensemble probability of being illicit
+    field: xgb_score
+    operator: ">"
+    threshold: 0.45
+    weight: 4.0
+    alert_level: high
+    typologies: [smurfing, layering, structuring, round_tripping]
+
+  - id: R_ISO
+    name: isolation_forest_anomaly
+    description: IsolationForest anomaly score (higher = more anomalous)
+    field: isolation_score
+    operator: ">"
+    threshold: 0.55
+    weight: 2.5
+    alert_level: medium
+    typologies: [smurfing, layering, structuring, round_tripping]
+
+  - id: R_ENS
+    name: ensemble_score
+    description: Weighted average of XGB and IsolationForest scores
+    field: ensemble_score
+    operator: ">"
+    threshold: 0.50
+    weight: 3.5
+    alert_level: high
+    typologies: [smurfing, layering, structuring, round_tripping]
+
+  - id: R001
+    name: large_single_transaction
+    field: amount
+    operator: ">"
+    threshold: 10000
+    weight: 0.8
+    alert_level: medium
+    typologies: [structuring]
+
+  - id: R008
+    name: graph_centrality_high
+    field: betweenness_centrality
+    operator: ">"
+    threshold: 0.08
+    weight: 1.5
+    alert_level: high
+    typologies: [layering, round_tripping]
+
+scoring:
+  method: weighted_sum
+  alert_threshold: 4.0
+  high_risk_threshold: 7.0
+
+cost_model:
+  investigation_cost_per_alert: 150
+  missed_laundering_cost_per_txn: 50000

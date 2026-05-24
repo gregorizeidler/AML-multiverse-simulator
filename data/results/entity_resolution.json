@@ -1,0 +1,11 @@
+{
+  "n_entities": 300,
+  "n_accounts_linked": 196,
+  "entity_risk_distribution": {
+    "high": 22,
+    "medium": 65,
+    "low": 213
+  },
+  "max_accounts_per_entity": 3,
+  "entities_with_multiple_accounts": 87
+}

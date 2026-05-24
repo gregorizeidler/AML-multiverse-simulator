@@ -1,0 +1,585 @@
+[
+  {
+    "id": "universe_ml_model_mut_1",
+    "name": "ML Model Universe [Mutation #1]",
+    "description": "Combines IsolationForest (unsupervised) and XGBoost (supervised, trained on time-split data) to produce calibrated probability scores. Rule thresholds are applied on ML-derived scores rather than raw features.\n",
+    "rules": [
+      {
+        "id": "R_XGB",
+        "name": "xgboost_score",
+        "description": "XGBoost ensemble probability of being illicit",
+        "field": "xgb_score",
+        "operator": ">",
+        "threshold": 0.45,
+        "weight": 4.0,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ISO",
+        "name": "isolation_forest_anomaly",
+        "description": "IsolationForest anomaly score (higher = more anomalous)",
+        "field": "isolation_score",
+        "operator": ">",
+        "threshold": 0.55,
+        "weight": 2.24,
+        "alert_level": "medium",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ENS",
+        "name": "ensemble_score",
+        "description": "Weighted average of XGB and IsolationForest scores",
+        "field": "ensemble_score",
+        "operator": ">",
+        "threshold": 0.59,
+        "weight": 3.5,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R001",
+        "name": "large_single_transaction",
+        "field": "amount",
+        "operator": ">",
+        "threshold": 10000,
+        "weight": 0.8,
+        "alert_level": "medium",
+        "typologies": [
+          "structuring"
+        ]
+      },
+      {
+        "id": "R008",
+        "name": "graph_centrality_high",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.08,
+        "weight": 1.03,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "round_tripping"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 3.57,
+      "high_risk_threshold": 7.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": [
+      "RR_ISO: weight 2.5 \u2192 2.24",
+      "RR_ENS: threshold 0.5 \u2192 0.59",
+      "RR008: weight 1.5 \u2192 1.03",
+      "alert_threshold: 4.0 \u2192 3.57"
+    ]
+  },
+  {
+    "id": "universe_ml_model_mut_2",
+    "name": "ML Model Universe [Mutation #2]",
+    "description": "Combines IsolationForest (unsupervised) and XGBoost (supervised, trained on time-split data) to produce calibrated probability scores. Rule thresholds are applied on ML-derived scores rather than raw features.\n",
+    "rules": [
+      {
+        "id": "R_XGB",
+        "name": "xgboost_score",
+        "description": "XGBoost ensemble probability of being illicit",
+        "field": "xgb_score",
+        "operator": ">",
+        "threshold": 0.45,
+        "weight": 4.0,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ISO",
+        "name": "isolation_forest_anomaly",
+        "description": "IsolationForest anomaly score (higher = more anomalous)",
+        "field": "isolation_score",
+        "operator": ">",
+        "threshold": 0.55,
+        "weight": 2.5,
+        "alert_level": "medium",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ENS",
+        "name": "ensemble_score",
+        "description": "Weighted average of XGB and IsolationForest scores",
+        "field": "ensemble_score",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 3.5,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R001",
+        "name": "large_single_transaction",
+        "field": "amount",
+        "operator": ">",
+        "threshold": 10000,
+        "weight": 0.8,
+        "alert_level": "medium",
+        "typologies": [
+          "structuring"
+        ]
+      },
+      {
+        "id": "R008",
+        "name": "graph_centrality_high",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.08,
+        "weight": 1.5,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "round_tripping"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 4.0,
+      "high_risk_threshold": 7.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": []
+  },
+  {
+    "id": "universe_ml_model_mut_3",
+    "name": "ML Model Universe [Mutation #3]",
+    "description": "Combines IsolationForest (unsupervised) and XGBoost (supervised, trained on time-split data) to produce calibrated probability scores. Rule thresholds are applied on ML-derived scores rather than raw features.\n",
+    "rules": [
+      {
+        "id": "R_XGB",
+        "name": "xgboost_score",
+        "description": "XGBoost ensemble probability of being illicit",
+        "field": "xgb_score",
+        "operator": ">",
+        "threshold": 0.55,
+        "weight": 4.0,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ISO",
+        "name": "isolation_forest_anomaly",
+        "description": "IsolationForest anomaly score (higher = more anomalous)",
+        "field": "isolation_score",
+        "operator": ">",
+        "threshold": 0.55,
+        "weight": 2.34,
+        "alert_level": "medium",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R_ENS",
+        "name": "ensemble_score",
+        "description": "Weighted average of XGB and IsolationForest scores",
+        "field": "ensemble_score",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 3.1,
+        "alert_level": "high",
+        "typologies": [
+          "smurfing",
+          "layering",
+          "structuring",
+          "round_tripping"
+        ]
+      },
+      {
+        "id": "R001",
+        "name": "large_single_transaction",
+        "field": "amount",
+        "operator": ">",
+        "threshold": 10000,
+        "weight": 0.8,
+        "alert_level": "medium",
+        "typologies": [
+          "structuring"
+        ]
+      },
+      {
+        "id": "R008",
+        "name": "graph_centrality_high",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.08,
+        "weight": 1.5,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "round_tripping"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 4.0,
+      "high_risk_threshold": 7.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": [
+      "RR_XGB: threshold 0.45 \u2192 0.55",
+      "RR_ISO: weight 2.5 \u2192 2.34",
+      "RR_ENS: weight 3.5 \u2192 3.1"
+    ]
+  },
+  {
+    "id": "universe_gnn_mut_1",
+    "name": "GNN Graph Universe [Mutation #1]",
+    "description": "Graph Neural Network universe: uses spectral graph embeddings (or PyTorch Geometric GraphSAGE when available) to produce account-level risk scores that capture 2nd and 3rd-order network neighborhoods. Particularly effective at detecting shell company chains, round-tripping, and TBML patterns where individual transaction signals are weak but graph topology is telling.\n",
+    "rules": [
+      {
+        "id": "R_GNN",
+        "name": "gnn_score",
+        "description": "Graph Neural Network / Spectral embedding risk score",
+        "field": "gnn_score",
+        "operator": ">",
+        "threshold": 0.48,
+        "weight": 5.0,
+        "alert_level": "high",
+        "typologies": [
+          "shell_company",
+          "round_tripping",
+          "tbml",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_CYCLE",
+        "name": "cycle_membership",
+        "description": "Account is part of a transaction cycle (round-tripping indicator)",
+        "field": "in_cycle",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 3.0,
+        "alert_level": "high",
+        "typologies": [
+          "round_tripping",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_PASS",
+        "name": "high_pass_through",
+        "description": "Account passes through >80% of received funds (pure conduit)",
+        "field": "pass_through_ratio",
+        "operator": ">",
+        "threshold": 0.8,
+        "weight": 2.5,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      },
+      {
+        "id": "R_ENT_RISK",
+        "name": "entity_risk_score",
+        "description": "Entity-level risk (accounts sharing same beneficial owner)",
+        "field": "from_entity_risk",
+        "operator": ">",
+        "threshold": 0.7,
+        "weight": 2.0,
+        "alert_level": "medium",
+        "typologies": [
+          "shell_company",
+          "tbml"
+        ]
+      },
+      {
+        "id": "R_CROSS",
+        "name": "cross_border_high_risk",
+        "description": "Cross-border transaction to high-risk jurisdiction",
+        "field": "is_cross_border",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 1.5,
+        "alert_level": "medium",
+        "typologies": [
+          "round_tripping",
+          "tbml",
+          "crypto_fiat"
+        ]
+      },
+      {
+        "id": "R_BC",
+        "name": "betweenness_centrality_high",
+        "description": "Account acts as central relay in the payment network",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.05,
+        "weight": 2.0,
+        "alert_level": "medium",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 4.5,
+      "high_risk_threshold": 8.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": [
+      "RR_GNN: threshold 0.4 \u2192 0.48"
+    ]
+  },
+  {
+    "id": "universe_gnn_mut_2",
+    "name": "GNN Graph Universe [Mutation #2]",
+    "description": "Graph Neural Network universe: uses spectral graph embeddings (or PyTorch Geometric GraphSAGE when available) to produce account-level risk scores that capture 2nd and 3rd-order network neighborhoods. Particularly effective at detecting shell company chains, round-tripping, and TBML patterns where individual transaction signals are weak but graph topology is telling.\n",
+    "rules": [
+      {
+        "id": "R_GNN",
+        "name": "gnn_score",
+        "description": "Graph Neural Network / Spectral embedding risk score",
+        "field": "gnn_score",
+        "operator": ">",
+        "threshold": 0.4,
+        "weight": 5.0,
+        "alert_level": "high",
+        "typologies": [
+          "shell_company",
+          "round_tripping",
+          "tbml",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_CYCLE",
+        "name": "cycle_membership",
+        "description": "Account is part of a transaction cycle (round-tripping indicator)",
+        "field": "in_cycle",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 3.0,
+        "alert_level": "high",
+        "typologies": [
+          "round_tripping",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_PASS",
+        "name": "high_pass_through",
+        "description": "Account passes through >80% of received funds (pure conduit)",
+        "field": "pass_through_ratio",
+        "operator": ">",
+        "threshold": 0.8,
+        "weight": 2.5,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      },
+      {
+        "id": "R_ENT_RISK",
+        "name": "entity_risk_score",
+        "description": "Entity-level risk (accounts sharing same beneficial owner)",
+        "field": "from_entity_risk",
+        "operator": ">",
+        "threshold": 0.87,
+        "weight": 2.0,
+        "alert_level": "medium",
+        "typologies": [
+          "shell_company",
+          "tbml"
+        ]
+      },
+      {
+        "id": "R_CROSS",
+        "name": "cross_border_high_risk",
+        "description": "Cross-border transaction to high-risk jurisdiction",
+        "field": "is_cross_border",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 1.5,
+        "alert_level": "medium",
+        "typologies": [
+          "round_tripping",
+          "tbml",
+          "crypto_fiat"
+        ]
+      },
+      {
+        "id": "R_BC",
+        "name": "betweenness_centrality_high",
+        "description": "Account acts as central relay in the payment network",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.05,
+        "weight": 2.0,
+        "alert_level": "medium",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 4.5,
+      "high_risk_threshold": 8.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": [
+      "RR_ENT_RISK: threshold 0.7 \u2192 0.87"
+    ]
+  },
+  {
+    "id": "universe_gnn_mut_3",
+    "name": "GNN Graph Universe [Mutation #3]",
+    "description": "Graph Neural Network universe: uses spectral graph embeddings (or PyTorch Geometric GraphSAGE when available) to produce account-level risk scores that capture 2nd and 3rd-order network neighborhoods. Particularly effective at detecting shell company chains, round-tripping, and TBML patterns where individual transaction signals are weak but graph topology is telling.\n",
+    "rules": [
+      {
+        "id": "R_GNN",
+        "name": "gnn_score",
+        "description": "Graph Neural Network / Spectral embedding risk score",
+        "field": "gnn_score",
+        "operator": ">",
+        "threshold": 0.4,
+        "weight": 5.0,
+        "alert_level": "high",
+        "typologies": [
+          "shell_company",
+          "round_tripping",
+          "tbml",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_CYCLE",
+        "name": "cycle_membership",
+        "description": "Account is part of a transaction cycle (round-tripping indicator)",
+        "field": "in_cycle",
+        "operator": ">",
+        "threshold": 0.5,
+        "weight": 3.0,
+        "alert_level": "high",
+        "typologies": [
+          "round_tripping",
+          "layering"
+        ]
+      },
+      {
+        "id": "R_PASS",
+        "name": "high_pass_through",
+        "description": "Account passes through >80% of received funds (pure conduit)",
+        "field": "pass_through_ratio",
+        "operator": ">",
+        "threshold": 0.8,
+        "weight": 2.5,
+        "alert_level": "high",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      },
+      {
+        "id": "R_ENT_RISK",
+        "name": "entity_risk_score",
+        "description": "Entity-level risk (accounts sharing same beneficial owner)",
+        "field": "from_entity_risk",
+        "operator": ">",
+        "threshold": 0.7,
+        "weight": 1.71,
+        "alert_level": "medium",
+        "typologies": [
+          "shell_company",
+          "tbml"
+        ]
+      },
+      {
+        "id": "R_BC",
+        "name": "betweenness_centrality_high",
+        "description": "Account acts as central relay in the payment network",
+        "field": "betweenness_centrality",
+        "operator": ">",
+        "threshold": 0.05,
+        "weight": 2.0,
+        "alert_level": "medium",
+        "typologies": [
+          "layering",
+          "shell_company"
+        ]
+      }
+    ],
+    "scoring": {
+      "method": "weighted_sum",
+      "alert_threshold": 4.5,
+      "high_risk_threshold": 8.0
+    },
+    "cost_model": {
+      "investigation_cost_per_alert": 150,
+      "missed_laundering_cost_per_txn": 50000
+    },
+    "_mutation_log": [
+      "RR_ENT_RISK: weight 2.0 \u2192 1.71",
+      "RR_CROSS: toggled OFF"
+    ]
+  }
+]

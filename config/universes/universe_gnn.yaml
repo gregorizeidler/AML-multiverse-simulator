@@ -1,0 +1,78 @@
+id: universe_gnn
+name: "GNN Graph Universe"
+description: >
+  Graph Neural Network universe: uses spectral graph embeddings (or PyTorch
+  Geometric GraphSAGE when available) to produce account-level risk scores
+  that capture 2nd and 3rd-order network neighborhoods. Particularly effective
+  at detecting shell company chains, round-tripping, and TBML patterns
+  where individual transaction signals are weak but graph topology is telling.
+
+rules:
+  - id: R_GNN
+    name: gnn_score
+    description: Graph Neural Network / Spectral embedding risk score
+    field: gnn_score
+    operator: ">"
+    threshold: 0.40
+    weight: 5.0
+    alert_level: high
+    typologies: [shell_company, round_tripping, tbml, layering]
+
+  - id: R_CYCLE
+    name: cycle_membership
+    description: Account is part of a transaction cycle (round-tripping indicator)
+    field: in_cycle
+    operator: ">"
+    threshold: 0.5
+    weight: 3.0
+    alert_level: high
+    typologies: [round_tripping, layering]
+
+  - id: R_PASS
+    name: high_pass_through
+    description: Account passes through >80% of received funds (pure conduit)
+    field: pass_through_ratio
+    operator: ">"
+    threshold: 0.80
+    weight: 2.5
+    alert_level: high
+    typologies: [layering, shell_company]
+
+  - id: R_ENT_RISK
+    name: entity_risk_score
+    description: Entity-level risk (accounts sharing same beneficial owner)
+    field: from_entity_risk
+    operator: ">"
+    threshold: 0.70
+    weight: 2.0
+    alert_level: medium
+    typologies: [shell_company, tbml]
+
+  - id: R_CROSS
+    name: cross_border_high_risk
+    description: Cross-border transaction to high-risk jurisdiction
+    field: is_cross_border
+    operator: ">"
+    threshold: 0.5
+    weight: 1.5
+    alert_level: medium
+    typologies: [round_tripping, tbml, crypto_fiat]
+
+  - id: R_BC
+    name: betweenness_centrality_high
+    description: Account acts as central relay in the payment network
+    field: betweenness_centrality
+    operator: ">"
+    threshold: 0.05
+    weight: 2.0
+    alert_level: medium
+    typologies: [layering, shell_company]
+
+scoring:
+  method: weighted_sum
+  alert_threshold: 4.5
+  high_risk_threshold: 8.0
+
+cost_model:
+  investigation_cost_per_alert: 150
+  missed_laundering_cost_per_txn: 50000
