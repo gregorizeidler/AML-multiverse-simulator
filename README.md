@@ -128,6 +128,95 @@ The Aggressive config uses `alert_threshold=4.0` with only high-weight rules. Wi
 
 ---
 
+### SHAP Feature Importance — ML Model Universe
+
+Computed via `shap.TreeExplainer` over 500 samples. Values are mean absolute SHAP contributions (higher = stronger predictor of illicit activity):
+
+| Rank | Feature | Mean \|SHAP\| | Interpretation |
+|------|---------|--------------|----------------|
+| 1 | `amount` | **0.3444** | Raw transaction value — large amounts dominate |
+| 2 | `in_cycle` | **0.2799** | Node is in a strongly-connected component (SCC > 1) |
+| 3 | `fan_out_ratio` | **0.2595** | Ratio of outgoing edges — fan-out hubs are suspicious |
+| 4 | `log_amount` | 0.1090 | Log-scaled amount; captures both ends of the distribution |
+| 5 | `peer_group_deviation` | 0.0929 | Z-score vs peer group (same occupation, risk tier) |
+| 6 | `hour_cos` | 0.0801 | Cosine encoding of hour — off-hours activity signal |
+| 7 | `community_risk_score` | 0.0592 | Louvain community's average illicit ratio |
+| 8 | `dow_sin` | 0.0468 | Sine encoding of day-of-week — weekend patterns |
+| 9 | `hour_anomaly` | 0.0276 | Binary flag for transactions outside business hours |
+| 10 | `betweenness_centrality` | 0.0076 | Graph centrality — high-throughput relay nodes |
+| 11 | `amount_zscore` | 0.0057 | Standardised amount vs account history |
+| 12 | `account_age_days` | 0.0047 | New accounts flagged more aggressively |
+
+> **Expected value (model baseline):** −7.5399 (log-odds). The model starts from a strong prior of "clean" and SHAP values push it toward +∞ (illicit).
+
+**Model Calibration (Isotonic Regression):**
+
+| Metric | Before calibration | After calibration |
+|--------|--------------------|-------------------|
+| ECE (Expected Calibration Error) | 0.000946 | **0.0000** |
+| MCE (Max Calibration Error) | 0.4523 | **0.0000** |
+| Brier Score | 0.000406 | **0.000306** |
+
+---
+
+### SAR Report — Real Auto-Generated Example
+
+**SAR ID:** `SAR-20260524-522FE3BE`  
+**Universe:** `universe_ml_model` · **Typology:** Shell Company  
+**Activity period:** 2023-01-01 → 2023-08-30 · **Filed:** 2026-05-24
+
+**Financial Summary:**
+
+| Metric | Value |
+|--------|-------|
+| Total Suspicious Amount | **$5,116,133.96** |
+| Transactions Flagged | 10 |
+| Accounts Involved | 9 |
+| Avg Alert Score | 10.80 / 10.80 max |
+
+**Subjects:**
+
+| Account | Role | Tx Count | Total Amount |
+|---------|------|----------|-------------|
+| A0000035 | originator | 3 | $1,223,030 |
+| A0000232 | intermediary | 4 | $1,139,941 |
+| A0000258 | intermediary | 2 | $590,622 |
+| A0000297 | originator | 3 | $971,411 |
+| A0000393 | intermediary | 2 | $506,651 |
+| A0000019 | intermediary | 2 | $302,351 |
+| A0000306 | originator | 1 | $382,125 |
+| A0000316 | beneficiary | 2 | — |
+| A0000018 | beneficiary | 1 | — |
+
+**Sample Transaction Chain (Shell Company layering):**
+
+```
+2023-01-01  A0000306 ──[$382,125]──► A0000297   score=10.8  [SHELL_2_000]
+2023-01-15  A0000019 ──[$302,351]──► A0000316   score=10.8  [SHELL_2_002]
+2023-01-20  A0000297 ──[$340,682]──► A0000019   score=10.8  [SHELL_2_001]
+                                ↑ funds recycled through intermediary chain
+```
+
+**Auto-generated narrative (excerpt):**
+```
+[AUTOMATED SAR NARRATIVE — REVIEW BEFORE FILING]
+
+Suspicious transaction patterns were detected that do not conform to
+the customer's expected behavior or business profile.
+
+This report covers 10 transaction(s) totaling $5,116,133.96 USD
+involving 9 account(s) (A0000393, A0000306, A0000297, and others).
+The activity was flagged by the AML Multiverse Simulator under universe
+'universe_ml_model' with an average alert score of 10.80.
+
+This narrative was auto-generated. A compliance officer must review,
+validate, and complete this SAR before submission to FinCEN.
+```
+
+**Recommended actions:** Enhanced due diligence · File with FinCEN · Escalate to compliance officer
+
+---
+
 ## Performance Benchmarks
 
 Measured on MacBook (Apple Silicon, Python 3.14, pandas 3.0.3):
