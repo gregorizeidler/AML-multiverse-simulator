@@ -362,17 +362,6 @@ MIT License — see `LICENSE` file.
 
 ```mermaid
 flowchart TD
-    style A fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style B fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style C fill:#14532d,stroke:#22c55e,color:#fff
-    style D fill:#14532d,stroke:#22c55e,color:#fff
-    style E fill:#78350f,stroke:#f59e0b,color:#fff
-    style F fill:#78350f,stroke:#f59e0b,color:#fff
-    style G fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style H fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style I fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style J fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style K fill:#064e3b,stroke:#10b981,color:#fff
 
     A["🏦 Data Generator\nCustomers · Accounts · Transactions\nPower-law graph · Business hours"] -->|"20k txns Parquet"| B
     B["💉 Typology Injector\n7 patterns: Smurfing · Layering\nStructuring · Round-trip\nTBML · Shell Co. · Crypto-Fiat"] -->|"flagged is_illicit"| C
@@ -441,10 +430,6 @@ aml-test-case/
 
 ```mermaid
 flowchart LR
-    style A fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style B fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style C fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style D fill:#14532d,stroke:#22c55e,color:#fff
 
     A["👥 generate_customers(n)\nFaker names · 15 occupations\nRisk: 70% low · 22% med · 8% high\nPEP flag on 15% of high-risk\n6 income brackets"] --> D
     B["🏧 generate_accounts(customers)\n1–3 accounts per customer\nBalance correlated to income\nHigh-risk customers → high-risk accounts"] --> D
@@ -511,14 +496,6 @@ The `risk_level` and `country` of each account are inherited directly from the c
 
 ```mermaid
 flowchart TD
-    style INJ fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style S fill:#78350f,stroke:#f59e0b,color:#fff
-    style L fill:#78350f,stroke:#f59e0b,color:#fff
-    style ST fill:#78350f,stroke:#f59e0b,color:#fff
-    style RT fill:#78350f,stroke:#f59e0b,color:#fff
-    style TB fill:#064e3b,stroke:#10b981,color:#fff
-    style SH fill:#064e3b,stroke:#10b981,color:#fff
-    style CF fill:#064e3b,stroke:#10b981,color:#fff
 
     INJ["TypologyInjector\nSelects bad_accounts\n(illicit_account_ratio=5%)"]
     INJ --> S["Smurfing\n8 scenarios · 6 smurfs each\nBurst transfers < $10k CTR\nAll to one destination\nseed+1"]
@@ -567,11 +544,6 @@ delay_days = rng.integers(2, 22)
 
 ```mermaid
 flowchart LR
-    style T fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style TS fill:#14532d,stroke:#22c55e,color:#fff
-    style B fill:#78350f,stroke:#f59e0b,color:#fff
-    style G fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style OUT fill:#064e3b,stroke:#10b981,color:#fff
 
     T["TransactionalFeatures\ntx_count_1h / 24h\namount_1h / 24h / 7d\nunique_counterparties_7d\namount_zscore\ndays_since_last_tx\nlog_amount · is_round_amount"] --> TS
     TS["TimeSeriesFeatures\nhour_sin/cos · dow_sin/cos\nmonth_sin/cos\nis_weekend · is_night\naccount_age_days\nhour_anomaly"] --> B
@@ -642,10 +614,6 @@ df["hour_cos"] = np.cos(2 * np.pi * df["hour_of_day"] / 24)
 
 ```mermaid
 flowchart TD
-    style Y fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style L fill:#14532d,stroke:#22c55e,color:#fff
-    style E fill:#78350f,stroke:#f59e0b,color:#fff
-    style A fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     Y["universe_balanced.yaml\nid: universe_balanced\nrules:\n- id: R002\n  field: tx_count_1h\n  operator: '>'\n  threshold: 5\n  weight: 2.0\n  alert_level: high"] --> L
     L["RuleConfig dataclass\nid · field · operator\nthreshold · weight\nalert_level · typologies"] --> E
@@ -698,9 +666,6 @@ For a transaction where:
 
 ```mermaid
 flowchart TD
-    style O fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style ER fill:#064e3b,stroke:#10b981,color:#fff
-    style P fill:#7f1d1d,stroke:#ef4444,color:#fff
 
     O["MultiverseOrchestrator\nload_all_configs(config/universes/)\nEntityResolver → entity_graph"] --> ER
     ER["ThreadPoolExecutor\nn_workers=4\n7 universes in parallel"] --> P
@@ -737,12 +702,6 @@ FeaturePipeline.run() → entity_graph.enrich() → [ML/GNN scoring] → RuleEva
 
 ```mermaid
 flowchart LR
-    style F fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style TR fill:#14532d,stroke:#22c55e,color:#fff
-    style IF fill:#78350f,stroke:#f59e0b,color:#fff
-    style XG fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style E fill:#064e3b,stroke:#10b981,color:#fff
-    style CA fill:#7f1d1d,stroke:#ef4444,color:#fff
 
     F["Feature DataFrame\n30 columns\nStandardScaler"] --> TR
     TR["Time-stratified split\ntrain = first 65%\n(sorted by timestamp)"] --> IF
@@ -794,10 +753,6 @@ Temporal:       hour_sin, hour_cos, dow_sin, dow_cos,
 
 ```mermaid
 flowchart TD
-    style G fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style T1 fill:#14532d,stroke:#22c55e,color:#fff
-    style T2 fill:#78350f,stroke:#f59e0b,color:#fff
-    style C fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     G["Transaction Graph G\nDirected · weighted by amount"] --> T1
     G --> T2
@@ -829,10 +784,6 @@ Nodes connected by many high-value transactions will have similar spectral coord
 
 ```mermaid
 flowchart LR
-    style A fill:#064e3b,stroke:#10b981,color:#fff
-    style B fill:#064e3b,stroke:#10b981,color:#fff
-    style C fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style D fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     A["Accounts table\nACC-001 CUS-A\nACC-002 CUS-A  ← same customer\nACC-003 CUS-B\nACC-004 CUS-C\nACC-005 corp@bigfirm.com"] --> C
     B["Customers table\nCUS-A alice@corp.com\nCUS-B bob@gmail.com\nCUS-C charlie@corp.com  ← same domain"] --> C
@@ -891,8 +842,6 @@ ranking_score = 0.35 × F1
 
 ```mermaid
 flowchart LR
-    style P fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style D fill:#7f1d1d,stroke:#ef4444,color:#fff
 
     P["Pareto-Optimal\nNo other universe\nis strictly better on\nALL 4 objectives simultaneously\n(F1, Recall, FPR, Cost)"]
     D["Dominated\nAt least one universe\nis ≥ on ALL objectives\nAND > on at least one"]
@@ -955,10 +904,6 @@ False positive analysis:
 
 ```mermaid
 flowchart TD
-    style O fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style T fill:#14532d,stroke:#22c55e,color:#fff
-    style F fill:#78350f,stroke:#f59e0b,color:#fff
-    style R fill:#064e3b,stroke:#10b981,color:#fff
 
     O["ThresholdOptimizer\nn_trials=50\nseed=42"] --> T
     T["Optuna TPE sampler\n(Tree-structured Parzen Estimator)\nmultivariate=True\nn_startup_trials=10\n\nOR scipy.optimize.differential_evolution\nif Optuna not installed"] --> F
@@ -975,19 +920,15 @@ Why Bayesian over random mutation:
 
 ## 13. Backtesting Engine
 
-```mermaid
-gantt
-    title Backtesting — Sliding Windows (30-day)
-    dateFormat YYYY-MM-DD
-    axisFormat %b %Y
-
-    section Windows
-    W1 (train+eval) :2023-01-01, 30d
-    W2 (train+eval) :2023-02-01, 30d
-    W3 (train+eval) :2023-03-01, 30d
-    W4 (train+eval) :2023-04-01, 30d
-    W5 (train+eval) :2023-05-01, 30d
-    W6 (train+eval) :2023-06-01, 30d
+```
+Window   Period              Train+Eval   Bootstrap F1 CI (95%)
+──────────────────────────────────────────────────────────────
+W1       2023-01-01  30d    ████████████
+W2       2023-02-01  30d    ████████████
+W3       2023-03-01  30d    ████████████
+W4       2023-04-01  30d    ████████████  ← KS drift test vs W3
+W5       2023-05-01  30d    ████████████
+W6       2023-06-01  30d    ████████████
 ```
 
 For each window:
@@ -1035,9 +976,6 @@ Output per universe:
 
 ```mermaid
 flowchart LR
-    style A fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style D fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style C fill:#14532d,stroke:#22c55e,color:#fff
 
     A["Alerts DataFrame\nalert_score · amount\namount_zscore\nbehavioral_anomaly_score\nbetweenness_centrality\npass_through_ratio"] --> D
     D["DBSCAN\neps=0.8 · min_samples=3\nStandardScaler on feature space\nNo k predefined\nNoise → status='noise'"] --> C
@@ -1058,10 +996,6 @@ Priority is determined by `max_alert_score`:
 
 ```mermaid
 flowchart LR
-    style R fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style C fill:#064e3b,stroke:#10b981,color:#fff
-    style KS fill:#78350f,stroke:#f59e0b,color:#fff
-    style P fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     R["Reference window\n(first 25% of data)"] --> KS
     C["Current window\n(last 25% of data)"] --> KS
@@ -1083,9 +1017,6 @@ A trained XGBoost model produces uncalibrated scores — the raw probability `0.
 
 ```mermaid
 flowchart LR
-    style R fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style I fill:#14532d,stroke:#22c55e,color:#fff
-    style M fill:#1e3a5f,stroke:#3b82f6,color:#fff
 
     R["Raw XGBoost scores\nOverconfident\n(compressed to extremes)"] --> I
     I["IsotonicRegression\n(monotone, non-parametric)\n.fit(y_scores, y_true)\n.transform(y_scores)"] --> M
@@ -1106,10 +1037,6 @@ A perfectly calibrated model has ECE = 0. Values below 0.05 indicate good calibr
 
 ```mermaid
 flowchart LR
-    style M fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style T fill:#14532d,stroke:#22c55e,color:#fff
-    style G fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style L fill:#064e3b,stroke:#10b981,color:#fff
 
     M["Trained XGBoost model\n+ StandardScaler"] --> T
     T["SHAPExplainer.fit(X_background)\nshap.TreeExplainer(model, data=X[:200])\n200-sample background for speed"] --> G
@@ -1164,10 +1091,6 @@ Interpretation: `prediction = 0.0478 (baseline) + 0.312 + 0.241 + 0.187 + ... = 
 
 ```mermaid
 flowchart LR
-    style U fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style E fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style M fill:#14532d,stroke:#22c55e,color:#fff
-    style O fill:#064e3b,stroke:#10b981,color:#fff
 
     U["All universes\nsorted by rank"] --> E
     E["evolve(n_survivors=2, n_offspring=3)\nTop-2 universes selected\nas parents for mutation"] --> M
@@ -1205,10 +1128,6 @@ The mutation engine is complementary to the Bayesian optimizer (Section 12): mut
 
 ```mermaid
 flowchart TD
-    style R fill:#064e3b,stroke:#10b981,color:#fff
-    style B fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style C fill:#78350f,stroke:#f59e0b,color:#fff
-    style CO fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     R["RecommendationAgent.generate(universes)"] --> B
     B["_recommend_from_best(best)\nRecall < 0.60 → lower threshold\nFPR > 0.15 → raise noisy rules\nCost > $1M → prioritize FN reduction\nF1 ≥ 0.70 → deploy recommendation"] --> CO
@@ -1247,9 +1166,6 @@ Example recommendation object:
 
 ```mermaid
 flowchart TD
-    style H fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style G fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style R fill:#14532d,stroke:#22c55e,color:#fff
 
     H["High-risk alerts\nalert_level in critical/high\nmin 3 per typology group"] --> G
     G["Group by illicit_typology\nSmurfing group → SAR-20240115-3F7A2B1C\nLayering group → SAR-20240115-A8C3D9E2\n+ 'unknown' mixed group"] --> R
@@ -1305,11 +1221,6 @@ def throughput(self) -> float:
 
 ```mermaid
 flowchart TD
-    style LC fill:#4c1d95,stroke:#8b5cf6,color:#fff
-    style O fill:#14532d,stroke:#22c55e,color:#fff
-    style OL fill:#78350f,stroke:#f59e0b,color:#fff
-    style H fill:#7f1d1d,stroke:#ef4444,color:#fff
-    style RAG fill:#1e3a5f,stroke:#3b82f6,color:#fff
 
     LC["LLMClient\nMode auto-detection at init:"] --> O
     LC --> OL
@@ -1352,9 +1263,6 @@ When a user asks "Show me the highest-scoring smurfing alerts", the system:
 
 ```mermaid
 flowchart LR
-    style API fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style R fill:#14532d,stroke:#22c55e,color:#fff
-    style W fill:#78350f,stroke:#f59e0b,color:#fff
 
     API["FastAPI app\nCORS: allow_origins=['*']\napi/main.py"] --> R
     API --> W
@@ -1372,9 +1280,6 @@ Expensive operations (SHAP, DBSCAN cases, drift) are computed on first request a
 
 ```mermaid
 flowchart TD
-    style A fill:#064e3b,stroke:#10b981,color:#fff
-    style S fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style P fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     A["App.jsx\nReact Router v6\n17 routes"] --> S
     S["Sidebar.jsx\n4 sections · 17 nav items\nNavLink active state"] --> P
@@ -1555,10 +1460,6 @@ pytest tests/ -v --cov=src --cov-report=term-missing
 
 ```mermaid
 flowchart TD
-    style IN fill:#1e3a5f,stroke:#3b82f6,color:#fff
-    style FE fill:#14532d,stroke:#22c55e,color:#fff
-    style ML fill:#78350f,stroke:#f59e0b,color:#fff
-    style OUT fill:#4c1d95,stroke:#8b5cf6,color:#fff
 
     IN["INPUT\ndata/output/\n  customers.parquet\n  accounts.parquet\n  transactions.parquet"]
     IN --> FE
