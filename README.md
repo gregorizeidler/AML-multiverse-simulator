@@ -22,8 +22,6 @@
 
 ![AML Multiverse Simulator v3 — Enterprise Architecture](docs/assets/architecture_enterprise.png)
 
-![AML Multiverse Simulator Architecture](docs/assets/architecture_overview.png)
-
 ### 7 Money-Laundering Typologies
 
 ![7 Money Laundering Typologies Explained](docs/assets/typologies_explained.png)
